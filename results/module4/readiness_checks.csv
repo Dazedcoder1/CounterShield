@@ -1,0 +1,39 @@
+dataset,check,passed,detail
+bot_iot,train file present,True,processed/model_ready/bot_iot/train.parquet
+bot_iot,train file unchanged since Module 3 (sha256),True,
+bot_iot,val file present,True,processed/model_ready/bot_iot/val.parquet
+bot_iot,val file unchanged since Module 3 (sha256),True,
+bot_iot,test file present,True,processed/model_ready/bot_iot/test.parquet
+bot_iot,test file unchanged since Module 3 (sha256),True,
+bot_iot,dev-train: finite float32 features,True,"300,000 x 46"
+bot_iot,dev-train: both classes present,True,attack rate 0.990
+bot_iot,val: finite float32 features,True,"135,589 x 46"
+bot_iot,val: both classes present,True,attack rate 0.990
+bot_iot,feature count matches manifest,True,46
+cic_ids2017,train file present,True,processed/model_ready/cic_ids2017/train.parquet
+cic_ids2017,train file unchanged since Module 3 (sha256),True,
+cic_ids2017,val file present,True,processed/model_ready/cic_ids2017/val.parquet
+cic_ids2017,val file unchanged since Module 3 (sha256),True,
+cic_ids2017,test file present,True,processed/model_ready/cic_ids2017/test.parquet
+cic_ids2017,test file unchanged since Module 3 (sha256),True,
+cic_ids2017,dev-train: finite float32 features,True,"300,000 x 69"
+cic_ids2017,dev-train: both classes present,True,attack rate 0.153
+cic_ids2017,val: finite float32 features,True,"329,790 x 69"
+cic_ids2017,val: both classes present,True,attack rate 0.153
+cic_ids2017,feature count matches manifest,True,69
+unsw_nb15,train file present,True,processed/model_ready/unsw_nb15/train.parquet
+unsw_nb15,train file unchanged since Module 3 (sha256),True,
+unsw_nb15,val file present,True,processed/model_ready/unsw_nb15/val.parquet
+unsw_nb15,val file unchanged since Module 3 (sha256),True,
+unsw_nb15,test file present,True,processed/model_ready/unsw_nb15/test.parquet
+unsw_nb15,test file unchanged since Module 3 (sha256),True,
+unsw_nb15,dev-train: finite float32 features,True,"84,377 x 81"
+unsw_nb15,dev-train: both classes present,True,attack rate 0.480
+unsw_nb15,val: finite float32 features,True,"14,891 x 81"
+unsw_nb15,val: both classes present,True,attack rate 0.480
+unsw_nb15,feature count matches manifest,True,81
+all,model 'logreg' builds,True,
+all,model 'random_forest' builds,True,
+all,model 'hist_gb' builds,True,
+all,model 'mlp' builds,True,
+all,sklearn version matches Module 3,True,"now 1.6.1, M3 1.6.1"

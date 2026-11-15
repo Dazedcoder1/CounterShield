@@ -1,0 +1,347 @@
+{
+  "bot_iot": {
+    "dataset": "bot_iot",
+    "rows_in": 911828,
+    "cols_in": 40,
+    "steps": [
+      {
+        "step": "drop_identifier_columns",
+        "rows_after": 911828,
+        "cols_after": 28,
+        "columns": [
+          "pkSeqID",
+          "stime",
+          "ltime",
+          "seq",
+          "saddr",
+          "daddr",
+          "smac",
+          "dmac",
+          "soui",
+          "doui",
+          "sco",
+          "dco"
+        ]
+      },
+      {
+        "step": "drop_raw_label_columns",
+        "rows_after": 911828,
+        "cols_after": 26,
+        "columns": [
+          "attack",
+          "category",
+          "subcategory"
+        ],
+        "note": "kept as y_binary / y_class / y_family / y_subclass"
+      },
+      {
+        "step": "standardise_types",
+        "rows_after": 911828,
+        "cols_after": 26,
+        "categorical": [
+          "flgs",
+          "proto",
+          "state"
+        ],
+        "converted_to_numeric": []
+      },
+      {
+        "step": "infinities_to_nan",
+        "rows_after": 911828,
+        "cols_after": 26,
+        "counts": {}
+      },
+      {
+        "step": "drop_empty_and_constant_columns",
+        "rows_after": 911828,
+        "cols_after": 26,
+        "all_nan": [],
+        "constant": []
+      },
+      {
+        "step": "sentinel_fill",
+        "rows_after": 911828,
+        "cols_after": 26,
+        "filled": {
+          "sport": 564,
+          "dport": 564
+        },
+        "values": {
+          "sport": -1,
+          "dport": -1
+        }
+      },
+      {
+        "step": "drop_rows_with_missing_features",
+        "rows_after": 911828,
+        "cols_after": 26,
+        "rows_dropped": 0,
+        "by_column": {}
+      },
+      {
+        "step": "negative_value_report",
+        "rows_after": 911828,
+        "cols_after": 26,
+        "policy": "report_only",
+        "columns": {}
+      },
+      {
+        "step": "remove_duplicates",
+        "rows_after": 903922,
+        "cols_after": 26,
+        "by_group": {
+          "all": {
+            "conflicting_rows_removed": 2009,
+            "conflicting_feature_groups": 960,
+            "exact_duplicates_removed": 5897
+          }
+        }
+      }
+    ],
+    "categorical_columns": [
+      "flgs",
+      "proto",
+      "state"
+    ],
+    "negative_value_columns": {},
+    "rows_out": 903922,
+    "cols_out": 26,
+    "duplicates": {
+      "all": {
+        "conflicting_rows_removed": 2009,
+        "conflicting_feature_groups": 960,
+        "exact_duplicates_removed": 5897
+      }
+    }
+  },
+  "cic_ids2017": {
+    "dataset": "cic_ids2017",
+    "rows_in": 2827876,
+    "cols_in": 85,
+    "steps": [
+      {
+        "step": "drop_identifier_columns",
+        "rows_after": 2827876,
+        "cols_after": 84,
+        "columns": [
+          "Destination Port"
+        ]
+      },
+      {
+        "step": "drop_raw_label_columns",
+        "rows_after": 2827876,
+        "cols_after": 83,
+        "columns": [
+          "Label"
+        ],
+        "note": "kept as y_binary / y_class / y_family"
+      },
+      {
+        "step": "standardise_types",
+        "rows_after": 2827876,
+        "cols_after": 83,
+        "categorical": [],
+        "converted_to_numeric": []
+      },
+      {
+        "step": "infinities_to_nan",
+        "rows_after": 2827876,
+        "cols_after": 83,
+        "counts": {}
+      },
+      {
+        "step": "drop_empty_and_constant_columns",
+        "rows_after": 2827876,
+        "cols_after": 75,
+        "all_nan": [],
+        "constant": [
+          "Bwd PSH Flags",
+          "Bwd URG Flags",
+          "Fwd Avg Bytes/Bulk",
+          "Fwd Avg Packets/Bulk",
+          "Fwd Avg Bulk Rate",
+          "Bwd Avg Bytes/Bulk",
+          "Bwd Avg Packets/Bulk",
+          "Bwd Avg Bulk Rate"
+        ]
+      },
+      {
+        "step": "sentinel_fill",
+        "rows_after": 2827876,
+        "cols_after": 75,
+        "filled": {},
+        "values": {}
+      },
+      {
+        "step": "drop_rows_with_missing_features",
+        "rows_after": 2827876,
+        "cols_after": 75,
+        "rows_dropped": 0,
+        "by_column": {}
+      },
+      {
+        "step": "negative_value_report",
+        "rows_after": 2827876,
+        "cols_after": 75,
+        "policy": "report_only",
+        "columns": {
+          "Flow Duration": 115,
+          "Flow Bytes/s": 85,
+          "Flow Packets/s": 115,
+          "Flow IAT Mean": 115,
+          "Flow IAT Max": 115,
+          "Flow IAT Min": 2890,
+          "Fwd IAT Min": 17,
+          "Fwd Header Length": 35,
+          "Bwd Header Length": 22,
+          "Fwd Header Length.1": 35,
+          "Init_Win_bytes_forward": 1001172,
+          "Init_Win_bytes_backward": 1439672,
+          "min_seg_size_forward": 35
+        }
+      },
+      {
+        "step": "remove_duplicates",
+        "rows_after": 2198595,
+        "cols_after": 75,
+        "by_group": {
+          "all": {
+            "conflicting_rows_removed": 82704,
+            "conflicting_feature_groups": 309,
+            "exact_duplicates_removed": 546577
+          }
+        }
+      }
+    ],
+    "categorical_columns": [],
+    "negative_value_columns": {
+      "Flow Duration": 115,
+      "Flow Bytes/s": 85,
+      "Flow Packets/s": 115,
+      "Flow IAT Mean": 115,
+      "Flow IAT Max": 115,
+      "Flow IAT Min": 2890,
+      "Fwd IAT Min": 17,
+      "Fwd Header Length": 35,
+      "Bwd Header Length": 22,
+      "Fwd Header Length.1": 35,
+      "Init_Win_bytes_forward": 1001172,
+      "Init_Win_bytes_backward": 1439672,
+      "min_seg_size_forward": 35
+    },
+    "rows_out": 2198595,
+    "cols_out": 75,
+    "duplicates": {
+      "all": {
+        "conflicting_rows_removed": 82704,
+        "conflicting_feature_groups": 309,
+        "exact_duplicates_removed": 546577
+      }
+    }
+  },
+  "unsw_nb15": {
+    "dataset": "unsw_nb15",
+    "rows_in": 257673,
+    "cols_in": 50,
+    "steps": [
+      {
+        "step": "drop_identifier_columns",
+        "rows_after": 257673,
+        "cols_after": 49,
+        "columns": [
+          "id"
+        ]
+      },
+      {
+        "step": "drop_raw_label_columns",
+        "rows_after": 257673,
+        "cols_after": 47,
+        "columns": [
+          "label",
+          "attack_cat"
+        ],
+        "note": "kept as y_binary / y_class / y_family"
+      },
+      {
+        "step": "standardise_types",
+        "rows_after": 257673,
+        "cols_after": 47,
+        "categorical": [
+          "proto",
+          "service",
+          "state"
+        ],
+        "converted_to_numeric": []
+      },
+      {
+        "step": "infinities_to_nan",
+        "rows_after": 257673,
+        "cols_after": 47,
+        "counts": {}
+      },
+      {
+        "step": "drop_empty_and_constant_columns",
+        "rows_after": 257673,
+        "cols_after": 47,
+        "all_nan": [],
+        "constant": []
+      },
+      {
+        "step": "sentinel_fill",
+        "rows_after": 257673,
+        "cols_after": 47,
+        "filled": {},
+        "values": {}
+      },
+      {
+        "step": "drop_rows_with_missing_features",
+        "rows_after": 257673,
+        "cols_after": 47,
+        "rows_dropped": 0,
+        "by_column": {}
+      },
+      {
+        "step": "negative_value_report",
+        "rows_after": 257673,
+        "cols_after": 47,
+        "policy": "report_only",
+        "columns": {}
+      },
+      {
+        "step": "remove_duplicates",
+        "rows_after": 181600,
+        "cols_after": 47,
+        "by_group": {
+          "test": {
+            "skipped": true,
+            "exact_duplicates_present": 26387
+          },
+          "train": {
+            "conflicting_rows_removed": 30528,
+            "conflicting_feature_groups": 1772,
+            "exact_duplicates_removed": 45545
+          }
+        }
+      }
+    ],
+    "categorical_columns": [
+      "proto",
+      "service",
+      "state"
+    ],
+    "negative_value_columns": {},
+    "rows_out": 181600,
+    "cols_out": 47,
+    "duplicates": {
+      "test": {
+        "skipped": true,
+        "exact_duplicates_present": 26387
+      },
+      "train": {
+        "conflicting_rows_removed": 30528,
+        "conflicting_feature_groups": 1772,
+        "exact_duplicates_removed": 45545
+      }
+    }
+  }
+}

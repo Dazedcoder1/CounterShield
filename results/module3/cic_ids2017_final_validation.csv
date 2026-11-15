@@ -1,0 +1,17 @@
+dataset,check,passed,detail
+cic_ids2017,train: row count matches manifest,True,"1,539,015"
+cic_ids2017,train: no NaN/inf,True,
+cic_ids2017,train: features stored as float32,True,
+cic_ids2017,val: row count matches manifest,True,"329,790"
+cic_ids2017,val: no NaN/inf,True,
+cic_ids2017,val: features stored as float32,True,
+cic_ids2017,test: row count matches manifest,True,"329,790"
+cic_ids2017,test: no NaN/inf,True,
+cic_ids2017,test: features stored as float32,True,
+cic_ids2017,same columns in every split,True,
+cic_ids2017,no label/meta columns among features,True,
+cic_ids2017,splits are disjoint,True,
+cic_ids2017,splits cover every cleaned row,True,
+cic_ids2017,every val/test class appears in train,True,
+cic_ids2017,val: class proportions match train (stratified),True,max diff 0.0000
+cic_ids2017,test: class proportions match train (stratified),True,max diff 0.0000

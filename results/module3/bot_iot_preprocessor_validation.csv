@@ -1,0 +1,11 @@
+dataset,check,passed,detail
+bot_iot,fitted on the training split only,True,"632,744 rows fitted, train has 632,744"
+bot_iot,input columns match schema,True,
+bot_iot,output width = feature names,True,46 features
+bot_iot,no NaN/inf (train sample),True,
+bot_iot,no NaN/inf (validation sample),True,
+bot_iot,numeric outputs bounded (quantile-normal),True,max |z| 5.20
+bot_iot,validation distribution matches train,True,"median |mean diff| 0.003, median |std diff| 0.001"
+bot_iot,unseen categories handled,True,
+bot_iot,deterministic transform,True,
+bot_iot,save/load round trip identical,True,

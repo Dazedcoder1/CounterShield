@@ -1,0 +1,17 @@
+dataset,check,passed,detail
+bot_iot,train: row count matches manifest,True,"632,744"
+bot_iot,train: no NaN/inf,True,
+bot_iot,train: features stored as float32,True,
+bot_iot,val: row count matches manifest,True,"135,589"
+bot_iot,val: no NaN/inf,True,
+bot_iot,val: features stored as float32,True,
+bot_iot,test: row count matches manifest,True,"135,589"
+bot_iot,test: no NaN/inf,True,
+bot_iot,test: features stored as float32,True,
+bot_iot,same columns in every split,True,
+bot_iot,no label/meta columns among features,True,
+bot_iot,splits are disjoint,True,
+bot_iot,splits cover every cleaned row,True,
+bot_iot,every val/test class appears in train,True,
+bot_iot,val: class proportions match train (stratified),True,max diff 0.0000
+bot_iot,test: class proportions match train (stratified),True,max diff 0.0000

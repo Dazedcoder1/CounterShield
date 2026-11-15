@@ -1,0 +1,176 @@
+dataset,column,dtype,missing_raw,inf_raw,pct_missing_raw,missing_clean,action
+bot_iot,pkSeqID,int32,0,0,0.0,,column removed (identifier / raw label / constant)
+bot_iot,stime,float32,0,0,0.0,,column removed (identifier / raw label / constant)
+bot_iot,flgs,object,0,0,0.0,0.0,none needed
+bot_iot,proto,object,0,0,0.0,0.0,none needed
+bot_iot,saddr,object,0,0,0.0,,column removed (identifier / raw label / constant)
+bot_iot,sport,float32,564,0,0.0619,0.0,filled with sentinel (564 values)
+bot_iot,daddr,object,0,0,0.0,,column removed (identifier / raw label / constant)
+bot_iot,dport,float32,564,0,0.0619,0.0,filled with sentinel (564 values)
+bot_iot,pkts,int32,0,0,0.0,0.0,none needed
+bot_iot,bytes,int32,0,0,0.0,0.0,none needed
+bot_iot,state,object,0,0,0.0,0.0,none needed
+bot_iot,ltime,float32,0,0,0.0,,column removed (identifier / raw label / constant)
+bot_iot,seq,int32,0,0,0.0,,column removed (identifier / raw label / constant)
+bot_iot,dur,float32,0,0,0.0,0.0,none needed
+bot_iot,mean,float32,0,0,0.0,0.0,none needed
+bot_iot,stddev,float32,0,0,0.0,0.0,none needed
+bot_iot,smac,float32,911828,0,100.0,,column removed (identifier / raw label / constant)
+bot_iot,dmac,float32,911828,0,100.0,,column removed (identifier / raw label / constant)
+bot_iot,sum,float32,0,0,0.0,0.0,none needed
+bot_iot,min,float32,0,0,0.0,0.0,none needed
+bot_iot,max,float32,0,0,0.0,0.0,none needed
+bot_iot,soui,float32,911828,0,100.0,,column removed (identifier / raw label / constant)
+bot_iot,doui,float32,911828,0,100.0,,column removed (identifier / raw label / constant)
+bot_iot,sco,float32,911828,0,100.0,,column removed (identifier / raw label / constant)
+bot_iot,dco,float32,911828,0,100.0,,column removed (identifier / raw label / constant)
+bot_iot,spkts,int32,0,0,0.0,0.0,none needed
+bot_iot,dpkts,int32,0,0,0.0,0.0,none needed
+bot_iot,sbytes,int32,0,0,0.0,0.0,none needed
+bot_iot,dbytes,int32,0,0,0.0,0.0,none needed
+bot_iot,rate,float32,0,0,0.0,0.0,none needed
+bot_iot,srate,float32,0,0,0.0,0.0,none needed
+bot_iot,drate,float32,0,0,0.0,0.0,none needed
+bot_iot,attack,int8,0,0,0.0,,column removed (identifier / raw label / constant)
+bot_iot,category,object,0,0,0.0,,column removed (identifier / raw label / constant)
+bot_iot,subcategory,category,0,0,0.0,,column removed (identifier / raw label / constant)
+bot_iot,y_class,category,0,0,0.0,0.0,none needed
+bot_iot,y_binary,int8,0,0,0.0,0.0,none needed
+bot_iot,y_family,category,0,0,0.0,0.0,none needed
+bot_iot,source_dataset,object,0,0,0.0,0.0,none needed
+bot_iot,split,object,0,0,0.0,0.0,none needed
+cic_ids2017,Destination Port,int32,0,0,0.0,,column removed (identifier / raw label / constant)
+cic_ids2017,Flow Duration,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Total Fwd Packets,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Total Backward Packets,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Total Length of Fwd Packets,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Total Length of Bwd Packets,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Fwd Packet Length Max,int16,0,0,0.0,0.0,none needed
+cic_ids2017,Fwd Packet Length Min,int16,0,0,0.0,0.0,none needed
+cic_ids2017,Fwd Packet Length Mean,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Fwd Packet Length Std,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Bwd Packet Length Max,int16,0,0,0.0,0.0,none needed
+cic_ids2017,Bwd Packet Length Min,int16,0,0,0.0,0.0,none needed
+cic_ids2017,Bwd Packet Length Mean,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Bwd Packet Length Std,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Flow Bytes/s,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Flow Packets/s,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Flow IAT Mean,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Flow IAT Std,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Flow IAT Max,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Flow IAT Min,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Fwd IAT Total,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Fwd IAT Mean,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Fwd IAT Std,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Fwd IAT Max,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Fwd IAT Min,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Bwd IAT Total,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Bwd IAT Mean,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Bwd IAT Std,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Bwd IAT Max,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Bwd IAT Min,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Fwd PSH Flags,int8,0,0,0.0,0.0,none needed
+cic_ids2017,Bwd PSH Flags,int8,0,0,0.0,,column removed (identifier / raw label / constant)
+cic_ids2017,Fwd URG Flags,int8,0,0,0.0,0.0,none needed
+cic_ids2017,Bwd URG Flags,int8,0,0,0.0,,column removed (identifier / raw label / constant)
+cic_ids2017,Fwd Header Length,int64,0,0,0.0,0.0,none needed
+cic_ids2017,Bwd Header Length,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Fwd Packets/s,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Bwd Packets/s,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Min Packet Length,int16,0,0,0.0,0.0,none needed
+cic_ids2017,Max Packet Length,int16,0,0,0.0,0.0,none needed
+cic_ids2017,Packet Length Mean,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Packet Length Std,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Packet Length Variance,float32,0,0,0.0,0.0,none needed
+cic_ids2017,FIN Flag Count,int8,0,0,0.0,0.0,none needed
+cic_ids2017,SYN Flag Count,int8,0,0,0.0,0.0,none needed
+cic_ids2017,RST Flag Count,int8,0,0,0.0,0.0,none needed
+cic_ids2017,PSH Flag Count,int8,0,0,0.0,0.0,none needed
+cic_ids2017,ACK Flag Count,int8,0,0,0.0,0.0,none needed
+cic_ids2017,URG Flag Count,int8,0,0,0.0,0.0,none needed
+cic_ids2017,CWE Flag Count,int8,0,0,0.0,0.0,none needed
+cic_ids2017,ECE Flag Count,int8,0,0,0.0,0.0,none needed
+cic_ids2017,Down/Up Ratio,int16,0,0,0.0,0.0,none needed
+cic_ids2017,Average Packet Size,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Avg Fwd Segment Size,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Avg Bwd Segment Size,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Fwd Header Length.1,int64,0,0,0.0,0.0,none needed
+cic_ids2017,Fwd Avg Bytes/Bulk,int8,0,0,0.0,,column removed (identifier / raw label / constant)
+cic_ids2017,Fwd Avg Packets/Bulk,int8,0,0,0.0,,column removed (identifier / raw label / constant)
+cic_ids2017,Fwd Avg Bulk Rate,int8,0,0,0.0,,column removed (identifier / raw label / constant)
+cic_ids2017,Bwd Avg Bytes/Bulk,int8,0,0,0.0,,column removed (identifier / raw label / constant)
+cic_ids2017,Bwd Avg Packets/Bulk,int8,0,0,0.0,,column removed (identifier / raw label / constant)
+cic_ids2017,Bwd Avg Bulk Rate,int8,0,0,0.0,,column removed (identifier / raw label / constant)
+cic_ids2017,Subflow Fwd Packets,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Subflow Fwd Bytes,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Subflow Bwd Packets,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Subflow Bwd Bytes,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Init_Win_bytes_forward,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Init_Win_bytes_backward,int32,0,0,0.0,0.0,none needed
+cic_ids2017,act_data_pkt_fwd,int32,0,0,0.0,0.0,none needed
+cic_ids2017,min_seg_size_forward,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Active Mean,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Active Std,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Active Max,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Active Min,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Idle Mean,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Idle Std,float32,0,0,0.0,0.0,none needed
+cic_ids2017,Idle Max,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Idle Min,int32,0,0,0.0,0.0,none needed
+cic_ids2017,Label,object,0,0,0.0,,column removed (identifier / raw label / constant)
+cic_ids2017,y_class,category,0,0,0.0,0.0,none needed
+cic_ids2017,y_binary,int8,0,0,0.0,0.0,none needed
+cic_ids2017,y_family,category,0,0,0.0,0.0,none needed
+cic_ids2017,source_dataset,object,0,0,0.0,0.0,none needed
+cic_ids2017,split,object,0,0,0.0,0.0,none needed
+cic_ids2017,source_file,category,0,0,0.0,0.0,none needed
+unsw_nb15,id,int32,0,0,0.0,,column removed (identifier / raw label / constant)
+unsw_nb15,dur,float32,0,0,0.0,0.0,none needed
+unsw_nb15,proto,object,0,0,0.0,0.0,none needed
+unsw_nb15,service,object,0,0,0.0,0.0,none needed
+unsw_nb15,state,object,0,0,0.0,0.0,none needed
+unsw_nb15,spkts,int16,0,0,0.0,0.0,none needed
+unsw_nb15,dpkts,int16,0,0,0.0,0.0,none needed
+unsw_nb15,sbytes,int32,0,0,0.0,0.0,none needed
+unsw_nb15,dbytes,int32,0,0,0.0,0.0,none needed
+unsw_nb15,rate,float32,0,0,0.0,0.0,none needed
+unsw_nb15,sttl,int16,0,0,0.0,0.0,none needed
+unsw_nb15,dttl,int16,0,0,0.0,0.0,none needed
+unsw_nb15,sload,float32,0,0,0.0,0.0,none needed
+unsw_nb15,dload,float32,0,0,0.0,0.0,none needed
+unsw_nb15,sloss,int16,0,0,0.0,0.0,none needed
+unsw_nb15,dloss,int16,0,0,0.0,0.0,none needed
+unsw_nb15,sinpkt,float32,0,0,0.0,0.0,none needed
+unsw_nb15,dinpkt,float32,0,0,0.0,0.0,none needed
+unsw_nb15,sjit,float32,0,0,0.0,0.0,none needed
+unsw_nb15,djit,float32,0,0,0.0,0.0,none needed
+unsw_nb15,swin,int16,0,0,0.0,0.0,none needed
+unsw_nb15,stcpb,int64,0,0,0.0,0.0,none needed
+unsw_nb15,dtcpb,int64,0,0,0.0,0.0,none needed
+unsw_nb15,dwin,int16,0,0,0.0,0.0,none needed
+unsw_nb15,tcprtt,float32,0,0,0.0,0.0,none needed
+unsw_nb15,synack,float32,0,0,0.0,0.0,none needed
+unsw_nb15,ackdat,float32,0,0,0.0,0.0,none needed
+unsw_nb15,smean,int16,0,0,0.0,0.0,none needed
+unsw_nb15,dmean,int16,0,0,0.0,0.0,none needed
+unsw_nb15,trans_depth,int16,0,0,0.0,0.0,none needed
+unsw_nb15,response_body_len,int32,0,0,0.0,0.0,none needed
+unsw_nb15,ct_srv_src,int8,0,0,0.0,0.0,none needed
+unsw_nb15,ct_state_ttl,int8,0,0,0.0,0.0,none needed
+unsw_nb15,ct_dst_ltm,int8,0,0,0.0,0.0,none needed
+unsw_nb15,ct_src_dport_ltm,int8,0,0,0.0,0.0,none needed
+unsw_nb15,ct_dst_sport_ltm,int8,0,0,0.0,0.0,none needed
+unsw_nb15,ct_dst_src_ltm,int8,0,0,0.0,0.0,none needed
+unsw_nb15,is_ftp_login,int8,0,0,0.0,0.0,none needed
+unsw_nb15,ct_ftp_cmd,int8,0,0,0.0,0.0,none needed
+unsw_nb15,ct_flw_http_mthd,int8,0,0,0.0,0.0,none needed
+unsw_nb15,ct_src_ltm,int8,0,0,0.0,0.0,none needed
+unsw_nb15,ct_srv_dst,int8,0,0,0.0,0.0,none needed
+unsw_nb15,is_sm_ips_ports,int8,0,0,0.0,0.0,none needed
+unsw_nb15,attack_cat,object,0,0,0.0,,column removed (identifier / raw label / constant)
+unsw_nb15,label,int8,0,0,0.0,,column removed (identifier / raw label / constant)
+unsw_nb15,y_class,category,0,0,0.0,0.0,none needed
+unsw_nb15,y_binary,int8,0,0,0.0,0.0,none needed
+unsw_nb15,y_family,category,0,0,0.0,0.0,none needed
+unsw_nb15,source_dataset,object,0,0,0.0,0.0,none needed
+unsw_nb15,split,object,0,0,0.0,0.0,none needed

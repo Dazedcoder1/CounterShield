@@ -1,0 +1,16 @@
+dataset,check,passed,detail
+unsw_nb15,train: row count matches manifest,True,"84,377"
+unsw_nb15,train: no NaN/inf,True,
+unsw_nb15,train: features stored as float32,True,
+unsw_nb15,val: row count matches manifest,True,"14,891"
+unsw_nb15,val: no NaN/inf,True,
+unsw_nb15,val: features stored as float32,True,
+unsw_nb15,test: row count matches manifest,True,"82,332"
+unsw_nb15,test: no NaN/inf,True,
+unsw_nb15,test: features stored as float32,True,
+unsw_nb15,same columns in every split,True,
+unsw_nb15,no label/meta columns among features,True,
+unsw_nb15,splits are disjoint,True,
+unsw_nb15,splits cover every cleaned row,True,
+unsw_nb15,every val/test class appears in train,True,
+unsw_nb15,val: class proportions match train (stratified),True,max diff 0.0000

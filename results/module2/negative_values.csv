@@ -1,0 +1,14 @@
+dataset,column,negative_rows
+cic_ids2017,Flow Duration,115
+cic_ids2017,Flow Bytes/s,85
+cic_ids2017,Flow Packets/s,115
+cic_ids2017,Flow IAT Mean,115
+cic_ids2017,Flow IAT Max,115
+cic_ids2017,Flow IAT Min,2890
+cic_ids2017,Fwd IAT Min,17
+cic_ids2017,Fwd Header Length,35
+cic_ids2017,Bwd Header Length,22
+cic_ids2017,Fwd Header Length.1,35
+cic_ids2017,Init_Win_bytes_forward,1001172
+cic_ids2017,Init_Win_bytes_backward,1439672
+cic_ids2017,min_seg_size_forward,35

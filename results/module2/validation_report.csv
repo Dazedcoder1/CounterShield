@@ -1,0 +1,25 @@
+dataset,check,passed,detail
+bot_iot,no missing values in features,True,
+bot_iot,no infinite values,True,
+bot_iot,no exact duplicate rows (dedup groups),True,0 found
+bot_iot,features are numeric or categorical,True,
+bot_iot,no identifier columns left,True,
+bot_iot,label columns present,True,
+bot_iot,two target classes present,True,
+bot_iot,row count matches cleaning log,True,
+cic_ids2017,no missing values in features,True,
+cic_ids2017,no infinite values,True,
+cic_ids2017,no exact duplicate rows (dedup groups),True,0 found
+cic_ids2017,features are numeric or categorical,True,
+cic_ids2017,no identifier columns left,True,
+cic_ids2017,label columns present,True,
+cic_ids2017,two target classes present,True,
+cic_ids2017,row count matches cleaning log,True,
+unsw_nb15,no missing values in features,True,
+unsw_nb15,no infinite values,True,
+unsw_nb15,no exact duplicate rows (dedup groups),True,0 found
+unsw_nb15,features are numeric or categorical,True,
+unsw_nb15,no identifier columns left,True,
+unsw_nb15,label columns present,True,
+unsw_nb15,two target classes present,True,
+unsw_nb15,row count matches cleaning log,True,

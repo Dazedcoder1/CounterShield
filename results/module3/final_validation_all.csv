@@ -1,0 +1,48 @@
+dataset,check,passed,detail
+bot_iot,train: row count matches manifest,True,"632,744"
+bot_iot,train: no NaN/inf,True,
+bot_iot,train: features stored as float32,True,
+bot_iot,val: row count matches manifest,True,"135,589"
+bot_iot,val: no NaN/inf,True,
+bot_iot,val: features stored as float32,True,
+bot_iot,test: row count matches manifest,True,"135,589"
+bot_iot,test: no NaN/inf,True,
+bot_iot,test: features stored as float32,True,
+bot_iot,same columns in every split,True,
+bot_iot,no label/meta columns among features,True,
+bot_iot,splits are disjoint,True,
+bot_iot,splits cover every cleaned row,True,
+bot_iot,every val/test class appears in train,True,
+bot_iot,val: class proportions match train (stratified),True,max diff 0.0000
+bot_iot,test: class proportions match train (stratified),True,max diff 0.0000
+cic_ids2017,train: row count matches manifest,True,"1,539,015"
+cic_ids2017,train: no NaN/inf,True,
+cic_ids2017,train: features stored as float32,True,
+cic_ids2017,val: row count matches manifest,True,"329,790"
+cic_ids2017,val: no NaN/inf,True,
+cic_ids2017,val: features stored as float32,True,
+cic_ids2017,test: row count matches manifest,True,"329,790"
+cic_ids2017,test: no NaN/inf,True,
+cic_ids2017,test: features stored as float32,True,
+cic_ids2017,same columns in every split,True,
+cic_ids2017,no label/meta columns among features,True,
+cic_ids2017,splits are disjoint,True,
+cic_ids2017,splits cover every cleaned row,True,
+cic_ids2017,every val/test class appears in train,True,
+cic_ids2017,val: class proportions match train (stratified),True,max diff 0.0000
+cic_ids2017,test: class proportions match train (stratified),True,max diff 0.0000
+unsw_nb15,train: row count matches manifest,True,"84,377"
+unsw_nb15,train: no NaN/inf,True,
+unsw_nb15,train: features stored as float32,True,
+unsw_nb15,val: row count matches manifest,True,"14,891"
+unsw_nb15,val: no NaN/inf,True,
+unsw_nb15,val: features stored as float32,True,
+unsw_nb15,test: row count matches manifest,True,"82,332"
+unsw_nb15,test: no NaN/inf,True,
+unsw_nb15,test: features stored as float32,True,
+unsw_nb15,same columns in every split,True,
+unsw_nb15,no label/meta columns among features,True,
+unsw_nb15,splits are disjoint,True,
+unsw_nb15,splits cover every cleaned row,True,
+unsw_nb15,every val/test class appears in train,True,
+unsw_nb15,val: class proportions match train (stratified),True,max diff 0.0000

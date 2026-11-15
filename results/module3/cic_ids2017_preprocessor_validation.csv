@@ -1,0 +1,10 @@
+dataset,check,passed,detail
+cic_ids2017,fitted on the training split only,True,"1,539,015 rows fitted, train has 1,539,015"
+cic_ids2017,input columns match schema,True,
+cic_ids2017,output width = feature names,True,69 features
+cic_ids2017,no NaN/inf (train sample),True,
+cic_ids2017,no NaN/inf (validation sample),True,
+cic_ids2017,numeric outputs bounded (quantile-normal),True,max |z| 5.20
+cic_ids2017,validation distribution matches train,True,"median |mean diff| 0.006, median |std diff| 0.005"
+cic_ids2017,deterministic transform,True,
+cic_ids2017,save/load round trip identical,True,

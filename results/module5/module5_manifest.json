@@ -1,0 +1,99 @@
+{
+  "created_utc": "2026-11-14T14:12:30+00:00",
+  "module": "5 - MLP experiments",
+  "device": {
+    "name": "Tesla T4",
+    "memory_GB": 14.6,
+    "cuda": "13.0"
+  },
+  "torch": "2.14.1+cu130",
+  "selection": {
+    "bot_iot": {
+      "experiment": "mlp_128_64",
+      "config": {
+        "hidden": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "batchnorm": false,
+        "lr": 0.001,
+        "weight_decay": 1e-05,
+        "batch_size": 2048
+      },
+      "val_f1_macro_mean": 0.968785679597663,
+      "val_f1_macro_std": 0.008507491616625867,
+      "best_epoch_seed0": 3,
+      "tuned_threshold": 0.02,
+      "val_f1_macro_at_tuned": 0.9860301973722776,
+      "runner_up": "mlp_256_128_64",
+      "margin": 0.004361133833631459
+    },
+    "cic_ids2017": {
+      "experiment": "mlp_128_64",
+      "config": {
+        "hidden": [
+          128,
+          64
+        ],
+        "dropout": 0.1,
+        "batchnorm": false,
+        "lr": 0.001,
+        "weight_decay": 1e-05,
+        "batch_size": 2048
+      },
+      "val_f1_macro_mean": 0.9960886072377506,
+      "val_f1_macro_std": 8.649694462591947e-05,
+      "best_epoch_seed0": 26,
+      "tuned_threshold": 0.7000000000000001,
+      "val_f1_macro_at_tuned": 0.996372934952806,
+      "runner_up": "mlp_256_128_64",
+      "margin": 0.0002147966828940362
+    },
+    "unsw_nb15": {
+      "experiment": "mlp_256_128_64",
+      "config": {
+        "hidden": [
+          256,
+          128,
+          64
+        ],
+        "dropout": 0.2,
+        "batchnorm": true,
+        "lr": 0.001,
+        "weight_decay": 1e-05,
+        "batch_size": 2048
+      },
+      "val_f1_macro_mean": 0.919299565742063,
+      "val_f1_macro_std": 0.0016110090942848966,
+      "best_epoch_seed0": 21,
+      "tuned_threshold": 0.5,
+      "val_f1_macro_at_tuned": 0.9181622071001694,
+      "runner_up": "mlp_512_256",
+      "margin": 0.0016207568595292265
+    }
+  },
+  "final_models": {
+    "bot_iot": {
+      "experiment": "mlp_128_64",
+      "train_seconds": 2.1,
+      "params": 14337,
+      "path": "models/module5/final/bot_iot__mlp_128_64.pt",
+      "sha256": "b042b2e9093bdfc8b1fb3b197656a87b3c49c50e3e30f94ed10a113d68e4c40e"
+    },
+    "cic_ids2017": {
+      "experiment": "mlp_128_64",
+      "train_seconds": 52.0,
+      "params": 17281,
+      "path": "models/module5/final/cic_ids2017__mlp_128_64.pt",
+      "sha256": "707dafd674aef589113d39e045324ee9611f54bbf824dd231b823b41a75d8b68"
+    },
+    "unsw_nb15": {
+      "experiment": "mlp_256_128_64",
+      "train_seconds": 3.4,
+      "params": 63105,
+      "path": "models/module5/final/unsw_nb15__mlp_256_128_64.pt",
+      "sha256": "c202f210b2019bbe18b12e9ff2486a4aa89c8724f7587c85edbba4e7810ec683"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "created_utc": "2026-11-14T13:56:45+00:00",
+  "module": "4 - classical ML",
+  "module3_manifest_created": "2026-11-14T13:30:52+00:00",
+  "selection": {
+    "bot_iot": {
+      "model": "random_forest",
+      "params": {
+        "n_estimators": 150,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "class_weight": "balanced_subsample"
+      },
+      "val_f1_macro": 0.9974135726640173,
+      "val_pr_auc": 0.9999999658450359,
+      "tuned_threshold": 0.66,
+      "val_f1_macro_at_tuned": 0.99778786744814,
+      "runner_up": "hist_gb",
+      "margin_over_runner_up": 0.0031056312772547168
+    },
+    "cic_ids2017": {
+      "model": "hist_gb",
+      "params": {
+        "max_iter": 300,
+        "learning_rate": 0.1,
+        "max_leaf_nodes": 63,
+        "early_stopping": true,
+        "validation_fraction": 0.1,
+        "n_iter_no_change": 20,
+        "class_weight": "balanced"
+      },
+      "val_f1_macro": 0.9977441022007254,
+      "val_pr_auc": 0.9999181458661176,
+      "tuned_threshold": 0.79,
+      "val_f1_macro_at_tuned": 0.9979801957128013,
+      "runner_up": "random_forest",
+      "margin_over_runner_up": 0.0005347275835392296
+    },
+    "unsw_nb15": {
+      "model": "hist_gb",
+      "params": {
+        "max_iter": 300,
+        "learning_rate": 0.1,
+        "max_leaf_nodes": 63,
+        "early_stopping": true,
+        "validation_fraction": 0.1,
+        "n_iter_no_change": 20,
+        "class_weight": "balanced"
+      },
+      "val_f1_macro": 0.9343361599289368,
+      "val_pr_auc": 0.9831810164217976,
+      "tuned_threshold": 0.48000000000000004,
+      "val_f1_macro_at_tuned": 0.9349564872096854,
+      "runner_up": "random_forest",
+      "margin_over_runner_up": 0.0010547030833892856
+    }
+  },
+  "final_models": {
+    "bot_iot": {
+      "model": "random_forest",
+      "n_train": 768333,
+      "fit_seconds": 189.9,
+      "attack_rate": 0.9898845943100192,
+      "path": "models/module4/final/bot_iot__random_forest.joblib",
+      "sha256": "45546f45c37153047c1752b8ae54dc30d3c5db49b97c811442210443cb61f0aa"
+    },
+    "cic_ids2017": {
+      "model": "hist_gb",
+      "n_train": 1000000,
+      "fit_seconds": 58.4,
+      "attack_rate": 0.152908,
+      "path": "models/module4/final/cic_ids2017__hist_gb.joblib",
+      "sha256": "35732654cffce835264a5b97c73a1d2643f22da608e06e542fc9871af3506c6c"
+    },
+    "unsw_nb15": {
+      "model": "hist_gb",
+      "n_train": 99268,
+      "fit_seconds": 15.9,
+      "attack_rate": 0.4795805294757626,
+      "path": "models/module4/final/unsw_nb15__hist_gb.joblib",
+      "sha256": "3937d1f3c9ad9853a932c5e017673e8e5ce110f35c842e9af75ed749bca1ee88"
+    }
+  },
+  "environment": {
+    "python": "3.13.16",
+    "sklearn": "1.6.1",
+    "cpus": 2,
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39"
+  }
+}

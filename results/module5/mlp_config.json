@@ -1,0 +1,60 @@
+{
+  "datasets": [
+    "bot_iot",
+    "cic_ids2017",
+    "unsw_nb15"
+  ],
+  "seeds": [
+    42,
+    7,
+    2026
+  ],
+  "max_epochs": 40,
+  "patience": 6,
+  "class_weighting": "balanced",
+  "selection_metric": "f1_macro",
+  "train_cap": null,
+  "experiments": {
+    "mlp_128_64": {
+      "hidden": [
+        128,
+        64
+      ],
+      "dropout": 0.1,
+      "batchnorm": false,
+      "lr": 0.001,
+      "weight_decay": 1e-05,
+      "batch_size": 2048
+    },
+    "mlp_256_128_64": {
+      "hidden": [
+        256,
+        128,
+        64
+      ],
+      "dropout": 0.2,
+      "batchnorm": true,
+      "lr": 0.001,
+      "weight_decay": 1e-05,
+      "batch_size": 2048
+    },
+    "mlp_512_256": {
+      "hidden": [
+        512,
+        256
+      ],
+      "dropout": 0.3,
+      "batchnorm": true,
+      "lr": 0.0005,
+      "weight_decay": 0.0001,
+      "batch_size": 4096
+    }
+  },
+  "device": {
+    "name": "Tesla T4",
+    "memory_GB": 14.6,
+    "cuda": "13.0"
+  },
+  "torch": "2.14.1+cu130",
+  "created_utc": "2026-11-14T14:37:53+00:00"
+}

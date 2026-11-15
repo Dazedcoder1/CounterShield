@@ -1,0 +1,46 @@
+{
+  "created_utc": "2026-11-14T13:27:20+00:00",
+  "module": "2 - data cleaning & audit",
+  "settings": {
+    "DROP_CONFLICTING": true,
+    "UNSW_DEDUP_TEST": false,
+    "RARE_CLASS_THRESHOLD": 100
+  },
+  "environment": {
+    "python": "3.13.16",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6"
+  },
+  "datasets": {
+    "bot_iot": {
+      "input": "processed/bot_iot.parquet",
+      "input_sha256": "f6073491a442665620f237b13d3022553b1bf8f6e79111769d01e64591414cfd",
+      "output": "processed/clean/bot_iot_clean.parquet",
+      "output_sha256": "32b4f23fe170fc752f990477b977ed04a5b4f34fb8e305d4cec678f50468697f",
+      "rows": 903922,
+      "features": 20,
+      "attack_rate": 0.9899,
+      "n_classes": 5
+    },
+    "cic_ids2017": {
+      "input": "processed/cic_ids2017.parquet",
+      "input_sha256": "2956687e7f47f1280cdee3c6e1b164f5f77b64fdf24444d4b76b991022d7c1b7",
+      "output": "processed/clean/cic_ids2017_clean.parquet",
+      "output_sha256": "5910a1be708e0c925ac5713f893436e28974adda1bac4eae32f4b72c6ac383f6",
+      "rows": 2198595,
+      "features": 69,
+      "attack_rate": 0.1529,
+      "n_classes": 15
+    },
+    "unsw_nb15": {
+      "input": "processed/unsw_nb15.parquet",
+      "input_sha256": "6c4e47d16b40078736e76da90cfb15e78bde7f37ad005d35c10af6ab51821517",
+      "output": "processed/clean/unsw_nb15_clean.parquet",
+      "output_sha256": "4f8d7dd1cb45625c6f6fa3658d897cfafb96c38fb57eeb4fb85a47d04efd37d8",
+      "rows": 181600,
+      "features": 42,
+      "attack_rate": 0.5118,
+      "n_classes": 10
+    }
+  }
+}

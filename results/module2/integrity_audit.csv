@@ -1,0 +1,4 @@
+dataset,rows_in,rows_out,rows_removed_pct,exact_duplicates_removed,conflicting_rows_removed,rows_with_missing_dropped,identifier_cols_dropped,constant_cols_dropped,empty_cols_dropped,cols_with_negatives,features_out,memory_MB,unsw_test_rows_overlapping_train
+bot_iot,911828,903922,0.87,5897,2009,0,12,0,0,0,20,157.8,
+cic_ids2017,2827876,2198595,22.25,546577,82704,0,1,8,0,13,69,746.4,
+unsw_nb15,257673,181600,29.52,45545,30528,0,1,0,0,0,42,38.9,5881.0

@@ -1,0 +1,11 @@
+dataset,check,passed,detail
+unsw_nb15,fitted on the training split only,True,"84,377 rows fitted, train has 84,377"
+unsw_nb15,input columns match schema,True,
+unsw_nb15,output width = feature names,True,81 features
+unsw_nb15,no NaN/inf (train sample),True,
+unsw_nb15,no NaN/inf (validation sample),True,
+unsw_nb15,numeric outputs bounded (quantile-normal),True,max |z| 5.20
+unsw_nb15,validation distribution matches train,True,"median |mean diff| 0.020, median |std diff| 0.012"
+unsw_nb15,unseen categories handled,True,
+unsw_nb15,deterministic transform,True,
+unsw_nb15,save/load round trip identical,True,
