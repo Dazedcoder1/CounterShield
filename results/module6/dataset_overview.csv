@@ -1,0 +1,4 @@
+dataset,clean_rows,input_features,model_features,classes,attack_rate,train,val,test,test_benign,test_attack
+bot_iot,903922,20,46,5,0.9899,632744,135589,135589,1371,134218
+cic_ids2017,2198595,69,69,15,0.1529,1539015,329790,329790,279362,50428
+unsw_nb15,181600,42,81,10,0.5118,84377,14891,82332,37000,45332

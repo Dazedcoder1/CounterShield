@@ -1,0 +1,31 @@
+dataset,comparison,feature,std_mean_diff,n_error_rows
+bot_iot,missed_vs_detected_attack,drate,2.196216344833374,10
+bot_iot,missed_vs_detected_attack,state_con,2.157430410385132,10
+bot_iot,missed_vs_detected_attack,dbytes,1.5921837091445923,10
+bot_iot,missed_vs_detected_attack,dpkts,1.5824835300445557,10
+bot_iot,missed_vs_detected_attack,spkts,1.0632333755493164,10
+bot_iot,missed_vs_detected_attack,sbytes,1.0596987009048462,10
+cic_ids2017,false_alarm_vs_true_negative,Fwd Packet Length Mean,-1.8264268636703491,135
+cic_ids2017,false_alarm_vs_true_negative,Avg Fwd Segment Size,-1.8264268636703491,135
+cic_ids2017,false_alarm_vs_true_negative,Subflow Fwd Bytes,-1.811328411102295,135
+cic_ids2017,false_alarm_vs_true_negative,Total Length of Fwd Packets,-1.811328411102295,135
+cic_ids2017,false_alarm_vs_true_negative,Fwd Packet Length Max,-1.7788900136947632,135
+cic_ids2017,false_alarm_vs_true_negative,act_data_pkt_fwd,-1.618709683418274,135
+cic_ids2017,missed_vs_detected_attack,act_data_pkt_fwd,-2.608172655105591,129
+cic_ids2017,missed_vs_detected_attack,Bwd Packet Length Std,-2.1328465938568115,129
+cic_ids2017,missed_vs_detected_attack,Subflow Fwd Bytes,-1.9788507223129272,129
+cic_ids2017,missed_vs_detected_attack,Total Length of Fwd Packets,-1.9788507223129272,129
+cic_ids2017,missed_vs_detected_attack,Fwd Packet Length Max,-1.933327317237854,129
+cic_ids2017,missed_vs_detected_attack,Avg Fwd Segment Size,-1.912840485572815,129
+unsw_nb15,false_alarm_vs_true_negative,sttl,1.5081641674041748,10490
+unsw_nb15,false_alarm_vs_true_negative,ct_state_ttl,1.3413892984390259,10490
+unsw_nb15,false_alarm_vs_true_negative,state_con,-0.81456458568573,10490
+unsw_nb15,false_alarm_vs_true_negative,dload,-0.8126447796821594,10490
+unsw_nb15,false_alarm_vs_true_negative,dmean,-0.6663404703140259,10490
+unsw_nb15,false_alarm_vs_true_negative,state_int,0.6486899852752686,10490
+unsw_nb15,missed_vs_detected_attack,is_sm_ips_ports,1.448951005935669,928
+unsw_nb15,missed_vs_detected_attack,service_-,1.314328908920288,928
+unsw_nb15,missed_vs_detected_attack,service_dns,-1.1839001178741455,928
+unsw_nb15,missed_vs_detected_attack,ct_dst_sport_ltm,-0.8699389100074768,928
+unsw_nb15,missed_vs_detected_attack,rate,-0.863980770111084,928
+unsw_nb15,missed_vs_detected_attack,sload,-0.7683942317962646,928

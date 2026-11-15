@@ -1,0 +1,64 @@
+{
+  "created_utc": "2026-11-14T14:14:33+00:00",
+  "module": "6 - cross-dataset analysis",
+  "thresholds": {
+    "bot_iot": {
+      "classical": 0.66,
+      "mlp": 0.02
+    },
+    "cic_ids2017": {
+      "classical": 0.79,
+      "mlp": 0.7000000000000001
+    },
+    "unsw_nb15": {
+      "classical": 0.48000000000000004,
+      "mlp": 0.5
+    }
+  },
+  "models": {
+    "bot_iot": {
+      "classical": "random_forest",
+      "mlp": "torch_mlp_128_64"
+    },
+    "cic_ids2017": {
+      "classical": "hist_gb",
+      "mlp": "torch_mlp_128_64"
+    },
+    "unsw_nb15": {
+      "classical": "hist_gb",
+      "mlp": "torch_mlp_256_128_64"
+    }
+  },
+  "n_boot": 500,
+  "shared_features": [
+    "dur",
+    "spkts",
+    "dpkts",
+    "sbytes",
+    "dbytes",
+    "rate",
+    "proto",
+    "state"
+  ],
+  "outputs": [
+    "results/module6/adversarial_validation.csv",
+    "results/module6/auc_comparison.csv",
+    "results/module6/confusion_matrices.csv",
+    "results/module6/cross_dataset_transfer.csv",
+    "results/module6/dataset_overview.csv",
+    "results/module6/error_confidence.csv",
+    "results/module6/error_feature_drivers.csv",
+    "results/module6/error_overlap.csv",
+    "results/module6/false_negatives_by_class.csv",
+    "results/module6/family_detection.csv",
+    "results/module6/figures/confusion_matrices.png",
+    "results/module6/figures/per_class_detection.png",
+    "results/module6/figures/roc_pr_curves.png",
+    "results/module6/module6_manifest.json",
+    "results/module6/per_class_detection.csv",
+    "results/module6/performance_by_dataset.csv",
+    "results/module6/precision_recall_f1_ci.csv",
+    "results/module6/summary.md",
+    "results/module6/val_test_gap.csv"
+  ]
+}

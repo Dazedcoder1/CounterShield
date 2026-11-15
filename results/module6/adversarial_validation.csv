@@ -1,0 +1,4 @@
+dataset,train_vs_test_auc,shift_level,top_shift_features
+bot_iot,0.49376184666666667,none/weak,"sport (0.14), dur (0.10), rate (0.10), srate (0.09), max (0.09)"
+cic_ids2017,0.5017184244444444,none/weak,"Flow Duration (0.03), Fwd Packets/s (0.03), Flow Bytes/s (0.03), Flow Packets/s (0.03), Flow IAT Mean (0.03)"
+unsw_nb15,0.8741722822222223,strong,"ct_dst_sport_ltm (0.07), dbytes (0.06), sbytes (0.06), ct_dst_src_ltm (0.05), sinpkt (0.05)"

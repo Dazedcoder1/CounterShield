@@ -1,0 +1,26 @@
+{
+  "bot_iot": {
+    "detector": "classical",
+    "thresholds": {
+      "max_f1": 0.66,
+      "fpr_1pct": 0.4933333694934845,
+      "fpr_0.1pct": 0.9600000381469727
+    }
+  },
+  "cic_ids2017": {
+    "detector": "classical",
+    "thresholds": {
+      "max_f1": 0.79,
+      "fpr_1pct": 0.004502247087657452,
+      "fpr_0.1pct": 0.4970467984676361
+    }
+  },
+  "unsw_nb15": {
+    "detector": "classical",
+    "thresholds": {
+      "max_f1": 0.48000000000000004,
+      "fpr_1pct": 0.909399688243866,
+      "fpr_0.1pct": 0.999066174030304
+    }
+  }
+}

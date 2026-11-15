@@ -1,0 +1,51 @@
+area,item,status,detail
+module1,processed/bot_iot.parquet,PASS,sha256 ok
+module1,bot_iot Kaggle version recorded,PASS,1
+module1,processed/cic_ids2017.parquet,PASS,sha256 ok
+module1,cic_ids2017 Kaggle version recorded,PASS,2
+module1,processed/unsw_nb15.parquet,PASS,sha256 ok
+module1,unsw_nb15 Kaggle version recorded,PASS,2
+module2,processed/bot_iot.parquet,PASS,sha256 ok
+module2,processed/clean/bot_iot_clean.parquet,PASS,sha256 ok
+module2,processed/cic_ids2017.parquet,PASS,sha256 ok
+module2,processed/clean/cic_ids2017_clean.parquet,PASS,sha256 ok
+module2,processed/unsw_nb15.parquet,PASS,sha256 ok
+module2,processed/clean/unsw_nb15_clean.parquet,PASS,sha256 ok
+module3,models/preprocessors/bot_iot_preprocessor.joblib,PASS,sha256 ok
+module3,processed/splits/bot_iot_split_manifest.parquet,PASS,present (no hash recorded)
+module3,processed/model_ready/bot_iot/train.parquet,PASS,sha256 ok
+module3,processed/model_ready/bot_iot/val.parquet,PASS,sha256 ok
+module3,processed/model_ready/bot_iot/test.parquet,PASS,sha256 ok
+module3,models/preprocessors/cic_ids2017_preprocessor.joblib,PASS,sha256 ok
+module3,processed/splits/cic_ids2017_split_manifest.parquet,PASS,present (no hash recorded)
+module3,processed/model_ready/cic_ids2017/train.parquet,PASS,sha256 ok
+module3,processed/model_ready/cic_ids2017/val.parquet,PASS,sha256 ok
+module3,processed/model_ready/cic_ids2017/test.parquet,PASS,sha256 ok
+module3,models/preprocessors/unsw_nb15_preprocessor.joblib,PASS,sha256 ok
+module3,processed/splits/unsw_nb15_split_manifest.parquet,PASS,present (no hash recorded)
+module3,processed/model_ready/unsw_nb15/train.parquet,PASS,sha256 ok
+module3,processed/model_ready/unsw_nb15/val.parquet,PASS,sha256 ok
+module3,processed/model_ready/unsw_nb15/test.parquet,PASS,sha256 ok
+module4,models/module4/final/bot_iot__random_forest.joblib,PASS,sha256 ok
+module4,models/module4/final/cic_ids2017__hist_gb.joblib,PASS,sha256 ok
+module4,models/module4/final/unsw_nb15__hist_gb.joblib,PASS,sha256 ok
+module5,models/module5/final/bot_iot__mlp_128_64.pt,PASS,sha256 ok
+module5,models/module5/final/cic_ids2017__mlp_128_64.pt,PASS,sha256 ok
+module5,models/module5/final/unsw_nb15__mlp_256_128_64.pt,PASS,sha256 ok
+configs,configs/feature_schema.json,PASS,present (no hash recorded)
+configs,configs/preprocessing_config.json,PASS,present (no hash recorded)
+configs,results/module4/training_config.json,PASS,present (no hash recorded)
+configs,results/module5/mlp_config.json,PASS,present (no hash recorded)
+configs,results/module6/module6_manifest.json,PASS,present (no hash recorded)
+configs,results/module7/evaluation_config.json,PASS,present (no hash recorded)
+seeds,split seed (Module 3),PASS,"{'bot_iot': 42, 'cic_ids2017': 42, 'unsw_nb15': 42}"
+seeds,training seed (Module 4),PASS,
+seeds,MLP seeds (Module 5),PASS,
+determinism,bot_iot classical reproduces saved predictions,PASS,
+determinism,bot_iot MLP reproduces saved predictions,PASS,max |diff| 1.19e-07
+determinism,cic_ids2017 classical reproduces saved predictions,PASS,
+determinism,cic_ids2017 MLP reproduces saved predictions,PASS,max |diff| 5.96e-08
+determinism,unsw_nb15 classical reproduces saved predictions,PASS,
+determinism,unsw_nb15 MLP reproduces saved predictions,PASS,max |diff| 1.19e-07
+environment,scikit-learn version,PASS,now 1.6.1; Module 3/4 1.6.1
+environment,torch version,PASS,now 2.14.1+cu130; Module 5 2.14.1+cu130
