@@ -1,0 +1,31 @@
+{
+  "split": {
+    "bot_iot": {
+      "use_official_test": false,
+      "test_frac": 0.15,
+      "val_frac": 0.15,
+      "seed": 42
+    },
+    "cic_ids2017": {
+      "use_official_test": false,
+      "test_frac": 0.15,
+      "val_frac": 0.15,
+      "seed": 42
+    },
+    "unsw_nb15": {
+      "use_official_test": true,
+      "test_frac": null,
+      "val_frac": 0.15,
+      "seed": 42
+    }
+  },
+  "preprocessing": {
+    "numeric_scaler": "quantile",
+    "quantile_subsample": 200000,
+    "max_categories": 20,
+    "seed": 42
+  },
+  "sklearn": "1.6.1",
+  "pandas": "2.2.3",
+  "created_utc": "2026-11-14T13:27:56+00:00"
+}

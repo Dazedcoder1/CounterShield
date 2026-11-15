@@ -1,0 +1,109 @@
+{
+  "project": "CounterShield",
+  "module": 4,
+  "step": 1,
+  "random_seed": 42,
+  "datasets": {
+    "bot_iot": {
+      "name": "BoT-IoT",
+      "model_ready": "processed/bot_model_ready.csv",
+      "task": "binary_classification",
+      "split_manifest": "configs/splits/bot_split_manifest.json"
+    },
+    "cicids2017": {
+      "name": "CICIDS-2017",
+      "model_ready": "processed/cicids2017_model_ready.csv",
+      "task": "binary_classification",
+      "split_manifest": "configs/splits/cicids2017_split_manifest.json"
+    },
+    "unsw_nb15": {
+      "name": "UNSW-NB15",
+      "train": "processed/unsw_nb15_model_ready_train.csv",
+      "test": "processed/unsw_nb15_model_ready_test.csv",
+      "task": "binary_classification",
+      "split_manifest": "configs/splits/unsw_split_manifest.json"
+    }
+  },
+  "training_objective": {
+    "task": "binary_intrusion_detection",
+    "target_column": "target",
+    "positive_class": 1,
+    "negative_class": 0,
+    "primary_metrics": [
+      "accuracy",
+      "precision",
+      "recall",
+      "f1",
+      "roc_auc",
+      "pr_auc"
+    ],
+    "confusion_matrix": true,
+    "classification_report": true
+  },
+  "model_families": {
+    "baseline": {
+      "model": "logistic_regression",
+      "enabled": true
+    },
+    "tree_baseline": {
+      "model": "random_forest",
+      "enabled": true
+    },
+    "boosting": {
+      "model": "hist_gradient_boosting",
+      "enabled": true
+    },
+    "neural": {
+      "model": "mlp",
+      "enabled": true
+    }
+  },
+  "leakage_policy": {
+    "random_seed": 42,
+    "preprocessors_fitted_on_training_only": true,
+    "validation_used_for_model_selection": true,
+    "test_used_for_model_selection": false,
+    "test_used_for_hyperparameter_tuning": false,
+    "test_used_for_early_stopping": false,
+    "test_evaluated_only_after_final_model": true,
+    "official_unsw_train_test_preserved": true
+  },
+  "split_policy": {
+    "bot_iot": {
+      "strategy": "deterministic_hash",
+      "train": 0.8,
+      "validation": 0.1,
+      "test": 0.1,
+      "seed": 42
+    },
+    "cicids2017": {
+      "strategy": "stratified",
+      "train": 0.8,
+      "validation": 0.1,
+      "test": 0.1,
+      "seed": 42
+    },
+    "unsw_nb15": {
+      "strategy": "official_train_test",
+      "validation_source": "training_split_only",
+      "test_source": "official_test_split"
+    }
+  },
+  "compute_policy": {
+    "gpu_required_for_configuration": false,
+    "gpu_required_for_classical_models": false,
+    "gpu_recommended_for_mlp": true,
+    "mixed_precision": false,
+    "device_selection": "auto",
+    "random_seed": 42
+  },
+  "output_policy": {
+    "save_models": true,
+    "save_training_history": true,
+    "save_metrics": true,
+    "save_confusion_matrices": true,
+    "save_predictions": true,
+    "save_experiment_config": true,
+    "checkpoint_training": true
+  }
+}

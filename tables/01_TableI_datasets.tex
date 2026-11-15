@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\caption{Datasets after acquisition (Module 1), cleaning (Module 2) and splitting (Module 3).}
+\label{tab:datasets}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llrrrrrr}
+\toprule
+Dataset & Ref. & Rows analysed & After cleaning & Features (raw / model) & Classes & Attack rate & Train / val / test \\
+\midrule
+BoT-IoT & \cite{koroniotis2019botiot} & 911,828 & 903,922 & 20 / 46 & 5 & 99.0\% & 632,744 / 135,589 / 135,589 \\
+CIC-IDS2017 & \cite{sharafaldin2018cicids} & 2,827,876 & 2,198,595 & 69 / 69 & 15 & 15.3\% & 1,539,015 / 329,790 / 329,790 \\
+UNSW-NB15 & \cite{moustafa2015unsw} & 257,673 & 181,600 & 42 / 81 & 10 & 51.2\% & 84,377 / 14,891 / 82,332 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\vspace{2pt}
+\parbox{0.95\linewidth}{\scriptsize BoT-IoT is a stratified sample of the full 73,370,443-flow release (at most 300,000 flows per attack category; all benign and theft flows kept). CIC-IDS2017 and BoT-IoT use stratified 70/15/15 splits; UNSW-NB15 keeps its official test set, and validation is a stratified 15\% of the official training set. Model features are counted after one-hot encoding.}
+\end{table*}

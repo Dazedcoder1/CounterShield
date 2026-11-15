@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{Validation macro-F1 of the classical models (Module 4). The selected model is in bold; its decision threshold was then tuned on validation.}
+\label{tab:validation}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lrrrrr}
+\toprule
+Dataset & LR & RF & HGB & sk-MLP & Thr. \\
+\midrule
+BoT-IoT & 0.8957 & \textbf{0.9974} & 0.9943 & 0.9900 & 0.66 \\
+CIC-IDS2017 & 0.9566 & 0.9972 & \textbf{0.9977} & 0.9944 & 0.79 \\
+UNSW-NB15 & 0.9061 & 0.9333 & \textbf{0.9343} & 0.9164 & 0.48 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\vspace{2pt}
+\parbox{0.98\linewidth}{\scriptsize LR: logistic regression; RF: random forest; HGB: histogram gradient boosting; sk-MLP: scikit-learn MLP (128-64). All models were trained on a stratified sample of at most 300,000 training rows and scored on the full validation split.}
+\end{table}

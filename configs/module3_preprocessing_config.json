@@ -1,0 +1,168 @@
+{
+  "module": "module_3",
+  "step": "step_1",
+  "leakage_policy": {
+    "fit_preprocessors_on_training_only": true,
+    "validation_used_only_for_evaluation": true,
+    "test_used_only_for_final_evaluation": true,
+    "never_fit_scaler_on_validation": true,
+    "never_fit_encoder_on_validation": true,
+    "never_fit_imputer_on_validation": true,
+    "never_fit_scaler_on_test": true,
+    "never_fit_encoder_on_test": true,
+    "never_fit_imputer_on_test": true
+  },
+  "target": {
+    "column": "target",
+    "task": "binary_attack_detection",
+    "classes": {
+      "0": "benign",
+      "1": "attack"
+    }
+  },
+  "preserve_metadata": {
+    "bot": [
+      "attack",
+      "category",
+      "subcategory"
+    ],
+    "cicids2017": [
+      "Label",
+      "attack_type"
+    ],
+    "unsw": [
+      "attack_cat",
+      "attack_type"
+    ]
+  },
+  "bot": {
+    "input": "/content/drive/MyDrive/CounterShield/processed/bot_clean.csv",
+    "output": "/content/drive/MyDrive/CounterShield/processed/bot_model_ready.csv",
+    "preprocessor": "/content/drive/MyDrive/CounterShield/models/bot_preprocessor.joblib",
+    "checkpoint": "/content/drive/MyDrive/CounterShield/checkpoints/bot_preprocessing_state.json",
+    "streaming": true,
+    "categorical_features": [
+      "flgs",
+      "proto",
+      "saddr",
+      "sport",
+      "daddr",
+      "dport",
+      "state"
+    ],
+    "numeric_features": [
+      "pkts",
+      "bytes",
+      "dur",
+      "mean",
+      "stddev",
+      "sum",
+      "min",
+      "max",
+      "spkts",
+      "dpkts",
+      "sbytes",
+      "dbytes",
+      "rate",
+      "srate",
+      "drate"
+    ],
+    "missing_strategy": {
+      "categorical": "explicit_unknown",
+      "numeric": "training_median"
+    },
+    "categorical_encoding": "frequency",
+    "numeric_scaling": "standard",
+    "split_strategy": {
+      "type": "deterministic_streaming",
+      "train_fraction": 0.8,
+      "validation_fraction": 0.1,
+      "test_fraction": 0.1,
+      "random_seed": 42
+    }
+  },
+  "cicids2017": {
+    "input": "/content/drive/MyDrive/CounterShield/processed/cicids2017_clean.csv",
+    "output": "/content/drive/MyDrive/CounterShield/processed/cicids2017_model_ready.csv",
+    "preprocessor": "/content/drive/MyDrive/CounterShield/models/cicids2017_preprocessor.joblib",
+    "categorical_features": [],
+    "numeric_features": "all_model_features",
+    "missing_strategy": {
+      "numeric": "training_median"
+    },
+    "numeric_scaling": "standard",
+    "split_strategy": {
+      "type": "stratified",
+      "train_fraction": 0.8,
+      "validation_fraction": 0.1,
+      "test_fraction": 0.1,
+      "random_seed": 42
+    }
+  },
+  "unsw": {
+    "train_input": "/content/drive/MyDrive/CounterShield/processed/unsw_nb15_train_clean.csv",
+    "test_input": "/content/drive/MyDrive/CounterShield/processed/unsw_nb15_test_clean.csv",
+    "train_output": "/content/drive/MyDrive/CounterShield/processed/unsw_nb15_train_model_ready.csv",
+    "test_output": "/content/drive/MyDrive/CounterShield/processed/unsw_nb15_test_model_ready.csv",
+    "preprocessor": "/content/drive/MyDrive/CounterShield/models/unsw_preprocessor.joblib",
+    "categorical_features": [
+      "proto",
+      "service",
+      "state"
+    ],
+    "numeric_features": [
+      "dur",
+      "spkts",
+      "dpkts",
+      "sbytes",
+      "dbytes",
+      "rate",
+      "sttl",
+      "dttl",
+      "sload",
+      "dload",
+      "sloss",
+      "dloss",
+      "sinpkt",
+      "dinpkt",
+      "sjit",
+      "djit",
+      "swin",
+      "stcpb",
+      "dtcpb",
+      "dwin",
+      "tcprtt",
+      "synack",
+      "ackdat",
+      "smean",
+      "dmean",
+      "trans_depth",
+      "response_body_len",
+      "ct_srv_src",
+      "ct_state_ttl",
+      "ct_dst_ltm",
+      "ct_src_dport_ltm",
+      "ct_dst_sport_ltm",
+      "ct_dst_src_ltm",
+      "is_ftp_login",
+      "ct_ftp_cmd",
+      "ct_flw_http_mthd",
+      "ct_src_ltm",
+      "ct_srv_dst",
+      "is_sm_ips_ports"
+    ],
+    "missing_strategy": {
+      "categorical": "explicit_unknown",
+      "numeric": "training_median"
+    },
+    "categorical_encoding": "frequency",
+    "numeric_scaling": "standard",
+    "split_strategy": {
+      "type": "official_train_test",
+      "validation_fraction_from_train": 0.1,
+      "random_seed": 42
+    }
+  },
+  "random_seed": 42,
+  "created_at": "2026-08-26T01:09:22.040136"
+}

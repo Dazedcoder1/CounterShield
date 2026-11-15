@@ -1,0 +1,13 @@
+{
+  "dataset": "UNSW-NB15",
+  "train_input": "/content/drive/MyDrive/CounterShield/processed/unsw_nb15_train_clean.csv",
+  "test_input": "/content/drive/MyDrive/CounterShield/processed/unsw_nb15_test_clean.csv",
+  "strategy": "official_train_test",
+  "training_validation": {
+    "train": 0.9,
+    "validation": 0.1
+  },
+  "test": "official_test_set",
+  "seed": 42,
+  "materialize": false
+}

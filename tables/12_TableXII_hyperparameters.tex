@@ -1,0 +1,23 @@
+\begin{table*}[t]
+\centering
+\caption{Model settings (Modules 4 and 5).}
+\label{tab:hyperparameters}
+\scriptsize
+\setlength{\tabcolsep}{3.5pt}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{l>{\raggedright\arraybackslash}p{0.74\textwidth}}
+\toprule
+Model & Settings \\
+\midrule
+logistic regression & C=1.0, max\_iter=2000, solver=lbfgs, class\_weight=balanced \\
+random forest & n\_estimators=150, max\_features=sqrt, min\_samples\_leaf=1, class\_weight=balanced\_subsample \\
+histogram gradient boosting & max\_iter=300, learning\_rate=0.1, max\_leaf\_nodes=63, early\_stopping=True, validation\_fraction=0.1, n\_iter\_no\_change=20, class\_weight=balanced \\
+scikit-learn MLP & hidden\_layer\_sizes=[128, 64], activation=relu, alpha=0.0001, batch\_size=1024, learning\_rate\_init=0.001, max\_iter=40, early\_stopping=True, n\_iter\_no\_change=5 \\
+PyTorch MLP 128-64 & hidden=[128, 64], dropout=0.1, batchnorm=False, lr=0.001, weight\_decay=1e-05, batch\_size=2048 \\
+PyTorch MLP 256-128-64 & hidden=[256, 128, 64], dropout=0.2, batchnorm=True, lr=0.001, weight\_decay=1e-05, batch\_size=2048 \\
+PyTorch MLP 512-256 & hidden=[512, 256], dropout=0.3, batchnorm=True, lr=0.0005, weight\_decay=0.0001, batch\_size=4096 \\
+PyTorch training & AdamW, BCE with pos\_weight = n\_benign/n\_attack, max 40 epochs, early stopping on validation macro-F1 (patience 6), ReduceLROnPlateau, seeds [42, 7, 2026] \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\end{table*}

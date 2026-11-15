@@ -1,0 +1,18 @@
+{
+  "dataset": "BoT-IoT",
+  "input": "/content/drive/MyDrive/CounterShield/processed/bot_clean.csv",
+  "strategy": "deterministic_hash",
+  "fractions": {
+    "train": 0.8,
+    "validation": 0.1,
+    "test": 0.1
+  },
+  "seed": 42,
+  "assignment": {
+    "method": "blake2b",
+    "digest_size": 8,
+    "identity": "row_index",
+    "seeded": true
+  },
+  "materialize": false
+}

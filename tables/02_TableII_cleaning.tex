@@ -1,0 +1,20 @@
+\begin{table}[t]
+\centering
+\caption{Rows removed by the Module 2 cleaning rules.}
+\label{tab:cleaning}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lrrrrr}
+\toprule
+Dataset & Rows in & Exact dup. & Conflicting & Rows out & Removed \\
+\midrule
+BoT-IoT & 911,828 & 5,897 & 2,009 & 903,922 & 0.87\% \\
+CIC-IDS2017 & 2,827,876 & 546,577 & 82,704 & 2,198,595 & 22.25\% \\
+UNSW-NB15 & 257,673 & 45,545 & 30,528 & 181,600 & 29.52\% \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\vspace{2pt}
+\parbox{0.98\linewidth}{\scriptsize Exact dup.: repeated feature rows with the same label. Conflicting: every copy of a feature row that occurs with more than one class label. For UNSW-NB15, duplicates are removed from the official training set only; the official test set is kept intact.}
+\end{table}

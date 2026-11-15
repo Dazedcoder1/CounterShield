@@ -1,0 +1,59 @@
+{
+  "module": "module_2_data_cleaning",
+  "version": "1.0",
+  "datasets": {
+    "BoT-IoT": {
+      "source_root": "/content/countersheild_data/ZT_datasets/BoT",
+      "target_source": "attack",
+      "binary_target": "target",
+      "label_columns": [
+        "attack",
+        "category",
+        "subcategory"
+      ],
+      "drop_columns": [
+        "smac",
+        "dmac",
+        "soui",
+        "doui",
+        "sco",
+        "dco"
+      ],
+      "malformed_records": 19,
+      "malformed_policy": "exclude_records_with_field_count_not_equal_to_35",
+      "missing_value_policy": "retain_rows_and_handle_missing_features_during_preprocessing",
+      "duplicate_policy": "retain_until_explicitly_required"
+    },
+    "CICIDS-2017": {
+      "source_root": "/content/countersheild_data/ZT_datasets/CIC",
+      "target_source": "Label",
+      "binary_target": "target",
+      "benign_value": "BENIGN",
+      "label_columns": [
+        "Label"
+      ],
+      "missing_value_policy": "retain_rows_and_handle_missing_features_during_preprocessing",
+      "infinite_value_policy": "replace_with_missing_then_impute_during_preprocessing",
+      "duplicate_policy": "retain_until_explicitly_required"
+    },
+    "UNSW-NB15": {
+      "source_root": "/content/countersheild_data/ZT_datasets/UNSW",
+      "train_file": "UNSW_NB15_training-set.csv",
+      "test_file": "UNSW_NB15_testing-set.csv",
+      "target_source": "label",
+      "binary_target": "target",
+      "attack_category": "attack_cat",
+      "duplicate_policy": "retain_until_explicitly_required",
+      "missing_value_policy": "retain_rows_and_handle_missing_features_during_preprocessing"
+    }
+  },
+  "general_rules": {
+    "normalize_column_names": true,
+    "remove_malformed_records": true,
+    "remove_target_missing_rows": true,
+    "remove_infinite_values_before_modeling": true,
+    "fit_preprocessing_on_training_data_only": true,
+    "preserve_original_attack_labels": true,
+    "preserve_binary_target": true
+  }
+}

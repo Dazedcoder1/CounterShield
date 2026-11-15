@@ -1,0 +1,53 @@
+{
+  "module": "module_3",
+  "step": "step_2",
+  "created_at": "2026-08-26T01:10:06.881818",
+  "seed": 42,
+  "physical_dataset_copies": false,
+  "datasets": {
+    "bot": {
+      "dataset": "BoT-IoT",
+      "input": "/content/drive/MyDrive/CounterShield/processed/bot_clean.csv",
+      "strategy": "deterministic_hash",
+      "fractions": {
+        "train": 0.8,
+        "validation": 0.1,
+        "test": 0.1
+      },
+      "seed": 42,
+      "assignment": {
+        "method": "blake2b",
+        "digest_size": 8,
+        "identity": "row_index",
+        "seeded": true
+      },
+      "materialize": false
+    },
+    "cicids2017": {
+      "dataset": "CICIDS-2017",
+      "input": "/content/drive/MyDrive/CounterShield/processed/cicids2017_clean.csv",
+      "strategy": "stratified",
+      "fractions": {
+        "train": 0.8,
+        "validation": 0.1,
+        "test": 0.1
+      },
+      "seed": 42,
+      "materialize": false
+    },
+    "unsw": {
+      "dataset": "UNSW-NB15",
+      "train_input": "/content/drive/MyDrive/CounterShield/processed/unsw_nb15_train_clean.csv",
+      "test_input": "/content/drive/MyDrive/CounterShield/processed/unsw_nb15_test_clean.csv",
+      "strategy": "official_train_test",
+      "training_validation": {
+        "train": 0.9,
+        "validation": 0.1
+      },
+      "test": "official_test_set",
+      "seed": 42,
+      "materialize": false
+    }
+  },
+  "leakage_rule": "All preprocessing statistics must be fitted using training rows only."
+}

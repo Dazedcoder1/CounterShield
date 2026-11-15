@@ -1,0 +1,12 @@
+﻿Perturbation,Strength,BoT-IoT,CIC-IDS2017,UNSW-NB15
+Gaussian noise,σ = 0.05,-0.005,-0.031,-0.027
+Gaussian noise,σ = 0.1,-0.016,-0.068,-0.041
+Gaussian noise,σ = 0.25,-0.057,-0.213,-0.066
+Gaussian noise,σ = 0.5,-0.202,-0.364,-0.125
+Feature dropout,10%,-0.005,-0.048,-0.053
+Feature dropout,25%,-0.032,-0.155,-0.126
+Feature dropout,50%,-0.144,-0.336,-0.241
+Threshold shift,-0.05,0.000,0.000,-0.011
+Threshold shift,+0.05,0.000,0.000,+0.010
+Threshold shift,-0.1,0.000,0.000,-0.021
+Threshold shift,+0.1,0.000,0.000,+0.020

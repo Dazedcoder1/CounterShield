@@ -1,0 +1,28 @@
+\begin{table*}[t]
+\centering
+\caption{Final CounterShield results on the held-out test sets. Detector and all three thresholds were fixed on validation (Module 7).}
+\label{tab:countershield}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{lllrrrrrrr}
+\toprule
+Dataset & Detector & Operating point & Threshold & Macro-F1 [95\% CI] & Precision & Recall & FPR & FNR & Alerts / 100k benign \\
+\midrule
+BoT-IoT & RF & max macro-F1 & 0.660 & 0.9978 [0.9964, 0.9989] & 1.0000 & 0.9999 & 0.15\% & 0.01\% & 146 \\
+ &  & FPR $\le$ 1\% & 0.493 & 0.9982 [0.9970, 0.9993] & 1.0000 & 1.0000 & 0.44\% & 0.00\% & 438 \\
+ &  & FPR $\le$ 0.1\% & 0.960 & 0.9909 [0.9882, 0.9932] & 1.0000 & 0.9996 & 0.07\% & 0.04\% & 73 \\
+\midrule
+CIC-IDS2017 & HGB & max macro-F1 & 0.790 & 0.9985 [0.9983, 0.9986] & 0.9973 & 0.9974 & 0.05\% & 0.26\% & 48 \\
+ &  & FPR $\le$ 1\% & 0.005 & 0.9692 [0.9684, 0.9700] & 0.9018 & 0.9999 & 1.96\% & 0.01\% & 1,964 \\
+ &  & FPR $\le$ 0.1\% & 0.497 & 0.9979 [0.9977, 0.9981] & 0.9936 & 0.9993 & 0.12\% & 0.07\% & 116 \\
+\midrule
+UNSW-NB15 & HGB & max macro-F1 & 0.480 & 0.8544 [0.8521, 0.8569] & 0.8089 & 0.9795 & 28.35\% & 2.05\% & 28,351 \\
+ &  & FPR $\le$ 1\% & 0.909 & 0.9156 [0.9138, 0.9175] & 0.9550 & 0.8892 & 5.13\% & 11.08\% & 5,132 \\
+ &  & FPR $\le$ 0.1\% & 0.999 & 0.6782 [0.6750, 0.6814] & 1.0000 & 0.4406 & 0.00\% & 55.94\% & 0 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\vspace{2pt}
+\parbox{0.95\linewidth}{\scriptsize Operating points: the validation threshold that maximises macro-F1, and the lowest validation thresholds whose validation FPR is at most 1\% and 0.1\%. Alerts per 100k benign flows = 100,000 $\times$ test FPR.}
+\end{table*}

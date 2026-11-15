@@ -1,0 +1,10 @@
+﻿Area,Checks,PASS,WARN,FAIL
+configs,6,6,0,0
+determinism,6,6,0,0
+environment,2,2,0,0
+module1,6,6,0,0
+module2,6,6,0,0
+module3,15,15,0,0
+module4,3,3,0,0
+module5,3,3,0,0
+seeds,3,3,0,0

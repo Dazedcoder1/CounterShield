@@ -1,0 +1,12 @@
+{
+  "dataset": "CICIDS-2017",
+  "input": "/content/drive/MyDrive/CounterShield/processed/cicids2017_clean.csv",
+  "strategy": "stratified",
+  "fractions": {
+    "train": 0.8,
+    "validation": 0.1,
+    "test": 0.1
+  },
+  "seed": 42,
+  "materialize": false
+}

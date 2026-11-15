@@ -1,0 +1,6 @@
+﻿Dataset,Class,Test rows,Classical,MLP
+CIC-IDS2017,heartbleed*,2,0.500,1.000
+CIC-IDS2017,infiltration*,5,0.600,0.800
+CIC-IDS2017,bot,210,0.667,0.471
+CIC-IDS2017,web: sql_injection*,3,1.000,0.000
+UNSW-NB15,fuzzers,"6,062",0.894,0.909

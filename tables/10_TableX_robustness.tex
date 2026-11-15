@@ -1,0 +1,30 @@
+\begin{table}[t]
+\centering
+\caption{Change in test macro-F1 of CounterShield under input perturbations (Module 7, 100,000-row stratified test sample, max-F1 threshold).}
+\label{tab:robustness}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llrrr}
+\toprule
+Perturbation & Strength & BoT-IoT & CIC-IDS2017 & UNSW-NB15 \\
+\midrule
+Gaussian noise & $\sigma$ = 0.05 & $-0.005$ & $-0.031$ & $-0.027$ \\
+Gaussian noise & $\sigma$ = 0.1 & $-0.016$ & $-0.068$ & $-0.041$ \\
+Gaussian noise & $\sigma$ = 0.25 & $-0.057$ & $-0.213$ & $-0.066$ \\
+Gaussian noise & $\sigma$ = 0.5 & $-0.202$ & $-0.364$ & $-0.125$ \\
+\midrule
+Feature dropout & 10\% & $-0.005$ & $-0.048$ & $-0.053$ \\
+Feature dropout & 25\% & $-0.032$ & $-0.155$ & $-0.126$ \\
+Feature dropout & 50\% & $-0.144$ & $-0.336$ & $-0.241$ \\
+\midrule
+Threshold shift & -0.05 & $0.000$ & $0.000$ & $-0.011$ \\
+Threshold shift & +0.05 & $0.000$ & $0.000$ & $+0.010$ \\
+Threshold shift & -0.1 & $0.000$ & $0.000$ & $-0.021$ \\
+Threshold shift & +0.1 & $0.000$ & $0.000$ & $+0.020$ \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\vspace{2pt}
+\parbox{0.98\linewidth}{\scriptsize Base macro-F1 on the sample: BoT-IoT 0.9980; CIC-IDS2017 0.9984; UNSW-NB15 0.8544. Feature dropout sets a random share of each row's features to 0, the training median after the quantile transform.}
+\end{table}

@@ -1,0 +1,22 @@
+\begin{table}[t]
+\centering
+\caption{Attack classes detected at a rate below 0.90 by either detector on test (Module 6).}
+\label{tab:weak_classes}
+\footnotesize
+\setlength{\tabcolsep}{3.5pt}
+\begin{adjustbox}{max width=\linewidth}
+\begin{tabular}{llrrr}
+\toprule
+Dataset & Class & Test rows & Classical & MLP \\
+\midrule
+CIC-IDS2017 & heartbleed* & 2 & 0.500 & 1.000 \\
+CIC-IDS2017 & infiltration* & 5 & 0.600 & 0.800 \\
+CIC-IDS2017 & bot & 210 & 0.667 & 0.471 \\
+CIC-IDS2017 & web: sql\_injection* & 3 & 1.000 & 0.000 \\
+UNSW-NB15 & fuzzers & 6,062 & 0.894 & 0.909 \\
+\bottomrule
+\end{tabular}
+\end{adjustbox}
+\par\vspace{2pt}
+\parbox{0.98\linewidth}{\scriptsize *Fewer than 20 test rows: rates are too noisy to compare.}
+\end{table}

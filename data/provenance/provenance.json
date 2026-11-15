@@ -1,0 +1,560 @@
+{
+  "bot_iot": {
+    "name": "BoT-IoT",
+    "kaggle_handle": "vigneshvenkateswaran/bot-iot",
+    "kaggle_url": "https://www.kaggle.com/datasets/vigneshvenkateswaran/bot-iot",
+    "kaggle_version": 1,
+    "downloaded_utc": "2026-09-23T19:08:58+00:00",
+    "kagglehub_version": "1.0.2",
+    "files": [
+      {
+        "file": "data_1.csv",
+        "bytes": 218326470,
+        "sha256": "119b2b2f92db5ea5537663579e8f080ede15537958ced198c24c8c04dd860570"
+      },
+      {
+        "file": "data_10.csv",
+        "bytes": 203190430,
+        "sha256": "0c852ecc50cf038aa30273e7426ae06b9721494c92245e4f4185eb649a2cf9cb"
+      },
+      {
+        "file": "data_11.csv",
+        "bytes": 204685380,
+        "sha256": "255ae04c7a6fda772b9972de300b5119e2bb925de4fa95c390e9056f6a6d2acb"
+      },
+      {
+        "file": "data_12.csv",
+        "bytes": 201327733,
+        "sha256": "c543c6717a0e17699f12f63bce0f2ac800fa270592b60270187baaf585bdb0bb"
+      },
+      {
+        "file": "data_13.csv",
+        "bytes": 205151654,
+        "sha256": "5fd8f19fc8566a0b94617ba91ac0be1b5d90d035216fbd30782eb75ee2bbf315"
+      },
+      {
+        "file": "data_14.csv",
+        "bytes": 205890955,
+        "sha256": "91e3ce2d1fec828aad4e3f7869780631b91f83ca094526d5a743ab726b3630e8"
+      },
+      {
+        "file": "data_15.csv",
+        "bytes": 204550157,
+        "sha256": "363a75c0c7ab02f69ea656c8987b59019d3ad389b599445ca4b8f66c1887acda"
+      },
+      {
+        "file": "data_16.csv",
+        "bytes": 205953129,
+        "sha256": "ab3d4c644b180d09193657d4411058236b5143fdb5d9bf8293f5b077257a2322"
+      },
+      {
+        "file": "data_17.csv",
+        "bytes": 202042320,
+        "sha256": "c7dcb87ca074f3958ae45ca783dcb497b1b7a5480540deb0b830215205a2e466"
+      },
+      {
+        "file": "data_18.csv",
+        "bytes": 204848836,
+        "sha256": "90389431309fec72ae0a55118a174e9ce365972ea9557bd6b3c78458fe37f34a"
+      },
+      {
+        "file": "data_19.csv",
+        "bytes": 204594471,
+        "sha256": "a056230eaf69a0a75c10a02afe862b4c9f25f704648fa237d74e92c0f09a604b"
+      },
+      {
+        "file": "data_2.csv",
+        "bytes": 218259016,
+        "sha256": "640929e6502f00a7308604e767ecd4f4a5112bb56d113a006a7f873c37832b80"
+      },
+      {
+        "file": "data_20.csv",
+        "bytes": 197784245,
+        "sha256": "6a28c651f7e133dcb607f4ece66e939940335610245e9c7164fe61cbdb6ee5e5"
+      },
+      {
+        "file": "data_21.csv",
+        "bytes": 206721148,
+        "sha256": "716fa22469ee4a7d989ca0f9bb93818c429fe7895fc339206b1de5d7d2eca3f9"
+      },
+      {
+        "file": "data_22.csv",
+        "bytes": 205722416,
+        "sha256": "cae994b4faac1c84a8834fd88a3927c449a9e21134788376fb06c5eeb0df1619"
+      },
+      {
+        "file": "data_23.csv",
+        "bytes": 205628615,
+        "sha256": "bb56d828ee44724d08898d0eea32cde6753e81672a50ba15bb8a56d48218d181"
+      },
+      {
+        "file": "data_24.csv",
+        "bytes": 205976539,
+        "sha256": "a19fa58534ad6ffc6b4c283692d856d7b41abf86bfaf8560280cdf8bfb063570"
+      },
+      {
+        "file": "data_25.csv",
+        "bytes": 205126466,
+        "sha256": "e2a84101f943f319877743f4e7de39aa322064049bdf7b11c3fc73af1be44844"
+      },
+      {
+        "file": "data_26.csv",
+        "bytes": 196826613,
+        "sha256": "cd7fddf917accc5d176394de525d03fc4bf01b5edce1435b73d991cdb77b83a1"
+      },
+      {
+        "file": "data_27.csv",
+        "bytes": 207073936,
+        "sha256": "9b688ce7cdf65fd688dc3a00fe6fcacdaffaa0968fc6cdce6c85463981733bcf"
+      },
+      {
+        "file": "data_28.csv",
+        "bytes": 203341040,
+        "sha256": "70360ffb1ca93bdb61ee71700e420855ff011d37c10cd707f15b2be7cddda0d4"
+      },
+      {
+        "file": "data_29.csv",
+        "bytes": 206760492,
+        "sha256": "f29bb1cef6db112cf791ea3eb52370b495692804db67fef8cd87b090a06d14c8"
+      },
+      {
+        "file": "data_3.csv",
+        "bytes": 204091460,
+        "sha256": "16c797f1aba26bb0a400842dd30319fb5018bbab2f76ba844afd502c3705457d"
+      },
+      {
+        "file": "data_30.csv",
+        "bytes": 205197386,
+        "sha256": "5e24fcc46adc7917839259aa7b8308e1c67bc6822724b8e7e06bf50ec5af6a06"
+      },
+      {
+        "file": "data_31.csv",
+        "bytes": 198948626,
+        "sha256": "c2da8232ce03021420b95d473f062b9255bafa32f2425bcac346f6bf0d4b2f63"
+      },
+      {
+        "file": "data_32.csv",
+        "bytes": 206830198,
+        "sha256": "c1043981c50f3f90fe32fdad348a7fc18b9bb9a60620f4d62e00d72316024bb7"
+      },
+      {
+        "file": "data_33.csv",
+        "bytes": 197891336,
+        "sha256": "305ea2b6210acf10573314086822c456711b9fd27d53ebef332be1d997753d1c"
+      },
+      {
+        "file": "data_34.csv",
+        "bytes": 205990226,
+        "sha256": "3c757cd0ae647d4ed30dc1d02ce257c820e43042130850fede7d101594ca6e20"
+      },
+      {
+        "file": "data_35.csv",
+        "bytes": 202519060,
+        "sha256": "931b05daab545803f1922c6a90ff3c1c6de0bd0d1187a54b4dcd5e928e345e21"
+      },
+      {
+        "file": "data_36.csv",
+        "bytes": 208600538,
+        "sha256": "e3e215bce9f247a72c44f1674afbec566b7d220a313af0fb15dcc206a06de1aa"
+      },
+      {
+        "file": "data_37.csv",
+        "bytes": 206809157,
+        "sha256": "eb4349e4bbd8fcf698b30b0b454c68aa4ace2fee206613dfbfe832dd04d51771"
+      },
+      {
+        "file": "data_38.csv",
+        "bytes": 207463722,
+        "sha256": "4f987b83ec4d80e7c70f050316a8c58d73a512e0a58de153774cd864fb27e0a4"
+      },
+      {
+        "file": "data_39.csv",
+        "bytes": 207427337,
+        "sha256": "998fd618f068cb17dc85332e19db09c7fd614e72ab07898eef952b745786a225"
+      },
+      {
+        "file": "data_4.csv",
+        "bytes": 204443641,
+        "sha256": "f73f341f5eca3c88ab131f70e57c47bd867657074aec73666e1c7668a9c93d82"
+      },
+      {
+        "file": "data_40.csv",
+        "bytes": 202380232,
+        "sha256": "3966fde140fc5fe9ec95a4a7143e0fde10b1551e9472bea5a05d4c9438d13825"
+      },
+      {
+        "file": "data_41.csv",
+        "bytes": 208529321,
+        "sha256": "66727702450ef3e25ba9e235e70be5b4f9d641f600df2fea0e1deecf1bc986cb"
+      },
+      {
+        "file": "data_42.csv",
+        "bytes": 202145258,
+        "sha256": "e9f80d9bc7035d6205f435aa5cb028539c9e4baeaed84ed84fcdc7361a278cfa"
+      },
+      {
+        "file": "data_43.csv",
+        "bytes": 203093100,
+        "sha256": "2b4c9a9f40a33f92b4be8526e361c9956ac70bca9866a72dd8c77c630d9591e8"
+      },
+      {
+        "file": "data_44.csv",
+        "bytes": 204874879,
+        "sha256": "684aadf6f84fd0786f3c79af66266f81ccc1621bfc86cb1807784ec4c037c662"
+      },
+      {
+        "file": "data_45.csv",
+        "bytes": 207771039,
+        "sha256": "949f1833a122839c6e13b5aefa0fce2775528ac58aace353380832d67d3c9b91"
+      },
+      {
+        "file": "data_46.csv",
+        "bytes": 207317525,
+        "sha256": "4183e6435f6ec47aaf78285d5dfbb82a503c8a0aab925a6cb144d1930aa3f067"
+      },
+      {
+        "file": "data_47.csv",
+        "bytes": 199199694,
+        "sha256": "6e4132dff26cac56b512a3459cec489ec1727f0fe31abf66f5a47b1da86cb7c6"
+      },
+      {
+        "file": "data_48.csv",
+        "bytes": 197343917,
+        "sha256": "abefbcc44019e8a6f0a70088ebc296ad6cddb181d83d1a942c8fe9c0ec8b39b5"
+      },
+      {
+        "file": "data_49.csv",
+        "bytes": 203714978,
+        "sha256": "6974529ce7daa71c56b8d1f8398086357f1e006c651dcbb8ef7a59e00b37374e"
+      },
+      {
+        "file": "data_5.csv",
+        "bytes": 204251990,
+        "sha256": "b0e0678896929b1f7b31fee3c1646f25d0e93550e63c09d9b06a095eb86f24b0"
+      },
+      {
+        "file": "data_50.csv",
+        "bytes": 203706389,
+        "sha256": "64f915311ebf50ef66426cd044067ae8cbc210f4dc49fcc100acf7d724867f02"
+      },
+      {
+        "file": "data_51.csv",
+        "bytes": 192836481,
+        "sha256": "c40e272b7c559b014c923932b993fe7c9bad88e982a9f1d02fa3dd6b56f53edb"
+      },
+      {
+        "file": "data_52.csv",
+        "bytes": 203787828,
+        "sha256": "57b9f4e137b68ad7ebb30566293f7b99c5784cbb8c13cefc53464aab53655837"
+      },
+      {
+        "file": "data_53.csv",
+        "bytes": 207108028,
+        "sha256": "ab8612ca9adc512df4abc71e14874b423ca25ecdab1605ad22e34ff941b42233"
+      },
+      {
+        "file": "data_54.csv",
+        "bytes": 207033726,
+        "sha256": "f47309fb0c2869adb2637eac1ddca161ee94f0d331165f76b2107cf11c2ee34e"
+      },
+      {
+        "file": "data_55.csv",
+        "bytes": 204087336,
+        "sha256": "5b03ce2146775a79b61fbfd0d09efe50025f44e6dde4ef12dc939fc109b2f438"
+      },
+      {
+        "file": "data_56.csv",
+        "bytes": 210126777,
+        "sha256": "52b14c1cc476d17e07b70087dcee299de5a6bf6090e34d7b7e30134c8bb5d356"
+      },
+      {
+        "file": "data_57.csv",
+        "bytes": 208726650,
+        "sha256": "b8ed09fc778207deb57c1ccc0a868be09e4986a934080c024cc79f94f9b31951"
+      },
+      {
+        "file": "data_58.csv",
+        "bytes": 208244742,
+        "sha256": "7fd6cee66226b31268b72f519accf240575762cde4a2e791e2250074adcd451e"
+      },
+      {
+        "file": "data_59.csv",
+        "bytes": 207906043,
+        "sha256": "0969742604b1b63af2093b1152163781b5ea24ab523ac41a1c7869854f46e084"
+      },
+      {
+        "file": "data_6.csv",
+        "bytes": 201303401,
+        "sha256": "2c5fdd0c9f21ee715ef4161c90d9d6346caf406795550ea492b832d4de797895"
+      },
+      {
+        "file": "data_60.csv",
+        "bytes": 209520617,
+        "sha256": "a666f8c9df78bc12cafa3abec9e9b6cfa9d40e58e5d3fd1e40b0e42a2ea8e72c"
+      },
+      {
+        "file": "data_61.csv",
+        "bytes": 210403338,
+        "sha256": "a57194731e3ff74899a37df7e5fd6c3478ec08579ec1e8d972e78b9eba7e9c56"
+      },
+      {
+        "file": "data_62.csv",
+        "bytes": 210494927,
+        "sha256": "41d587a5477112519e9a82af3f62093424c2e0279bb932b4ce42be9aa36826ad"
+      },
+      {
+        "file": "data_63.csv",
+        "bytes": 208614604,
+        "sha256": "4088ec65f6d84befc2399496d15695dcc9277c53d8c53e38b36eff4516f9822f"
+      },
+      {
+        "file": "data_64.csv",
+        "bytes": 205620127,
+        "sha256": "e5a84f67a546a3a57df02686c94b7e5aa73322e4011c614352a47a38201f302b"
+      },
+      {
+        "file": "data_65.csv",
+        "bytes": 203692223,
+        "sha256": "776024daccdd74e30e17f099b4756595591cb2af58d17ac7dafeb1a58dd9a5f6"
+      },
+      {
+        "file": "data_66.csv",
+        "bytes": 203570551,
+        "sha256": "1fe01e57773c5f8913457f7ee7adfa57966caa0c0adbb1bab92dc1ca12877dcf"
+      },
+      {
+        "file": "data_67.csv",
+        "bytes": 200247047,
+        "sha256": "7d71da951a2a36987aacd29b11b67b65477e17c37ffd70a99b9f86ea319847a4"
+      },
+      {
+        "file": "data_68.csv",
+        "bytes": 199745091,
+        "sha256": "6523ef9574da00357e20ddf33feb334ba93da38be91d1fd8819d0bd3969df131"
+      },
+      {
+        "file": "data_69.csv",
+        "bytes": 200841566,
+        "sha256": "5308580f3e4977fc8bd6a8baf3d2e8ba24ca26c811d9070c5b13add2a8b22414"
+      },
+      {
+        "file": "data_7.csv",
+        "bytes": 203746860,
+        "sha256": "cbf5b6c030c9f346a68eaa8c7709291b432f8cd27f0d293fcf1c78f147eae162"
+      },
+      {
+        "file": "data_70.csv",
+        "bytes": 187915386,
+        "sha256": "64e602bf984a30e6717d452878b631d57d71b35184719321cecfe41592591b45"
+      },
+      {
+        "file": "data_71.csv",
+        "bytes": 201432889,
+        "sha256": "10a3b0f1773f22da0e7570c3ddcc1bd22ca57439e8fe63f7c5c20ce090828156"
+      },
+      {
+        "file": "data_72.csv",
+        "bytes": 202858522,
+        "sha256": "e95cd0e2dabccf2827dc223b3e807ba5c241e22187eb52b6308e841028b16a00"
+      },
+      {
+        "file": "data_73.csv",
+        "bytes": 202359117,
+        "sha256": "8f1ea93c43f2274216405801f978e5856349464f6c67b5db4b62009e3f80082c"
+      },
+      {
+        "file": "data_74.csv",
+        "bytes": 73493929,
+        "sha256": "5ffd6482a3feda1c34dc51f457b7329548a82f552bbaf0017c7f79ce939ab8a6"
+      },
+      {
+        "file": "data_8.csv",
+        "bytes": 204279327,
+        "sha256": "db8af330e8a8712958bb8f9ca0fa8440da6ab455193cb9725165929a40030302"
+      },
+      {
+        "file": "data_9.csv",
+        "bytes": 198257322,
+        "sha256": "0d9b34c2f17da96488b7017ea12e267ec0227dd09746769efa683d6c76a9f4b6"
+      },
+      {
+        "file": "data_names.csv",
+        "bytes": 203,
+        "sha256": "0c7516e0fb425ba0d245d4420e2b2e7adf381caa94de304f940d64d952b359aa"
+      }
+    ],
+    "processing": {
+      "files_used": [
+        "data_1.csv",
+        "data_2.csv",
+        "data_3.csv",
+        "data_4.csv",
+        "data_5.csv",
+        "data_6.csv",
+        "data_7.csv",
+        "data_8.csv",
+        "data_9.csv",
+        "data_10.csv",
+        "data_11.csv",
+        "data_12.csv",
+        "data_13.csv",
+        "data_14.csv",
+        "data_15.csv",
+        "data_16.csv",
+        "data_17.csv",
+        "data_18.csv",
+        "data_19.csv",
+        "data_20.csv",
+        "data_21.csv",
+        "data_22.csv",
+        "data_23.csv",
+        "data_24.csv",
+        "data_25.csv",
+        "data_26.csv",
+        "data_27.csv",
+        "data_28.csv",
+        "data_29.csv",
+        "data_30.csv",
+        "data_31.csv",
+        "data_32.csv",
+        "data_33.csv",
+        "data_34.csv",
+        "data_35.csv",
+        "data_36.csv",
+        "data_37.csv",
+        "data_38.csv",
+        "data_39.csv",
+        "data_40.csv",
+        "data_41.csv",
+        "data_42.csv",
+        "data_43.csv",
+        "data_44.csv",
+        "data_45.csv",
+        "data_46.csv",
+        "data_47.csv",
+        "data_48.csv",
+        "data_49.csv",
+        "data_50.csv",
+        "data_51.csv",
+        "data_52.csv",
+        "data_53.csv",
+        "data_54.csv",
+        "data_55.csv",
+        "data_56.csv",
+        "data_57.csv",
+        "data_58.csv",
+        "data_59.csv",
+        "data_60.csv",
+        "data_61.csv",
+        "data_62.csv",
+        "data_63.csv",
+        "data_64.csv",
+        "data_65.csv",
+        "data_66.csv",
+        "data_67.csv",
+        "data_68.csv",
+        "data_69.csv",
+        "data_70.csv",
+        "data_71.csv",
+        "data_72.csv",
+        "data_73.csv",
+        "data_74.csv"
+      ],
+      "full_class_counts": {
+        "DDoS": 38532480,
+        "DoS": 33005194,
+        "Reconnaissance": 1821639,
+        "Normal": 9543,
+        "Theft": 1587
+      },
+      "sampling": "stratified by category, max 300000 rows/class, seed 42"
+    },
+    "processed_file": "processed/bot_iot.parquet",
+    "processed_sha256": "f6073491a442665620f237b13d3022553b1bf8f6e79111769d01e64591414cfd"
+  },
+  "cic_ids2017": {
+    "name": "CIC-IDS2017",
+    "kaggle_handle": "shamstahzib/cicids2017-dataset",
+    "kaggle_url": "https://www.kaggle.com/datasets/shamstahzib/cicids2017-dataset",
+    "kaggle_version": 2,
+    "downloaded_utc": "2026-11-14T13:24:34+00:00",
+    "kagglehub_version": "1.0.3",
+    "files": [
+      {
+        "file": "CICIDS2017/Friday-WorkingHours-Afternoon-DDos.pcap_ISCX.csv",
+        "bytes": 77123859,
+        "sha256": "6ff1580f5f81c0ae28a26f7631721018577f5f7c5e0feac28b795fcfe7b411ee"
+      },
+      {
+        "file": "CICIDS2017/Friday-WorkingHours-Afternoon-PortScan.pcap_ISCX.csv",
+        "bytes": 76906168,
+        "sha256": "ca1824c51bfbb7b3c72290a11be04366ba8815878c6a1cc5c44cb1cee269e99b"
+      },
+      {
+        "file": "CICIDS2017/Friday-WorkingHours-Morning.pcap_ISCX.csv",
+        "bytes": 58316725,
+        "sha256": "53a41c24d570ea83b7ac55b2e94df94e7a8216aeb80a2af0246b6bc8bb543000"
+      },
+      {
+        "file": "CICIDS2017/Monday-WorkingHours.pcap_ISCX.csv",
+        "bytes": 176927918,
+        "sha256": "852c4beb34eda186f32561fa79df7a0747e92e1a6535b01270820dd9ffe17f34"
+      },
+      {
+        "file": "CICIDS2017/Thursday-WorkingHours-Afternoon-Infilteration.pcap_ISCX.csv",
+        "bytes": 83102436,
+        "sha256": "6bcda3857c2504676034e3ea57762d38393cc734cb377a726bd5cb153961b1b5"
+      },
+      {
+        "file": "CICIDS2017/Thursday-WorkingHours-Morning-WebAttacks.pcap_ISCX.csv",
+        "bytes": 52023263,
+        "sha256": "d67066211fb1689c78406f1506f4c44704ecb92088353d5c96d96d6474eb819d"
+      },
+      {
+        "file": "CICIDS2017/Tuesday-WorkingHours.pcap_ISCX.csv",
+        "bytes": 135078995,
+        "sha256": "52b8692ae8c7d2ed04671fe2b98335693c0a92c7ab157d8c8b534d6523080851"
+      },
+      {
+        "file": "CICIDS2017/Wednesday-workingHours.pcap_ISCX.csv",
+        "bytes": 225166395,
+        "sha256": "893c27dc968bf7a8adef1689f90be55ca4a4dc3088fb63d6ff247ac56856df2a"
+      }
+    ],
+    "processing": {
+      "dropped_nan_inf": true,
+      "drop_duplicates": false
+    },
+    "processed_file": "processed/cic_ids2017.parquet",
+    "processed_sha256": "2956687e7f47f1280cdee3c6e1b164f5f77b64fdf24444d4b76b991022d7c1b7"
+  },
+  "unsw_nb15": {
+    "name": "UNSW-NB15",
+    "kaggle_handle": "shamstahzib/unsw-nb15-train-test",
+    "kaggle_url": "https://www.kaggle.com/datasets/shamstahzib/unsw-nb15-train-test",
+    "kaggle_version": 2,
+    "downloaded_utc": "2026-11-14T13:24:36+00:00",
+    "kagglehub_version": "1.0.3",
+    "files": [
+      {
+        "file": "UNSW_NB15_testing-set.csv",
+        "bytes": 15380800,
+        "sha256": "734fe6642edf758f7c94d7d9149426b49d202fe8e7bf0bef47392489c3c0a559"
+      },
+      {
+        "file": "UNSW_NB15_training-set.csv",
+        "bytes": 32293018,
+        "sha256": "bec7dd5ec88dc2a0ccc7a07879d338395ed7421750f675fd0339e07dfe0648fa"
+      }
+    ],
+    "processed_file": "processed/unsw_nb15.parquet",
+    "processed_sha256": "6c4e47d16b40078736e76da90cfb15e78bde7f37ad005d35c10af6ab51821517"
+  },
+  "_environment": {
+    "python": "3.13.16",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "platform": "Linux-6.6.159+-x86_64-with-glibc2.39",
+    "seed": 42
+  }
+}
