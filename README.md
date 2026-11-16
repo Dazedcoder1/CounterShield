@@ -152,40 +152,6 @@ These are discussed in Sec. VII of the paper:
 - **Transfer scope.** Transfer covers only BoT-IoT and UNSW-NB15, on 8 features whose names match.
 - **Synthetic perturbations.** The robustness tests use random noise and feature dropout, not adaptive attacks.
 
-## Citation
-
-If you use this code or these results, please cite the paper:
-
-```bibtex
-@article{countershield2026,
-  author  = {Tahzib, Shams and Khan, Mohammad Hassan and Mishra, Shailendra and Rathi, Megha},
-  title   = {{CounterShield}: A Reproducible Multi-Dataset Evaluation of Machine-Learning Network Intrusion Detection under Distribution Shift},
-  journal = {IEEE Transactions on Network and Service Management},
-  note    = {Submitted},
-  year    = {2026}
-}
-```
-
-and the software release:
-
-```bibtex
-@software{countershield_code_2026,
-  author    = {Tahzib, Shams and Khan, Mohammad Hassan and Mishra, Shailendra and Rathi, Megha},
-  title     = {{CounterShield}: code and results},
-  version   = {1.0.0},
-  publisher = {Zenodo},
-  doi       = {10.5281/zenodo.24256031},
-  url       = {https://github.com/Dazedcoder1/CounterShield},
-  year      = {2026}
-}
-```
-
-Please also cite the original datasets:
-
-1. N. Koroniotis, N. Moustafa, E. Sitnikova and B. Turnbull, "Towards the development of realistic botnet dataset in the Internet of Things for network forensic analytics: Bot-IoT dataset," *Future Generation Computer Systems*, vol. 100, pp. 779–796, 2019, doi: 10.1016/j.future.2019.05.041.
-2. I. Sharafaldin, A. H. Lashkari and A. A. Ghorbani, "Toward generating a new intrusion detection dataset and intrusion traffic characterization," in *Proc. 4th Int. Conf. Information Systems Security and Privacy (ICISSP)*, 2018, pp. 108–116, doi: 10.5220/0006639801080116.
-3. N. Moustafa and J. Slay, "UNSW-NB15: a comprehensive data set for network intrusion detection systems (UNSW-NB15 network data set)," in *Proc. Military Communications and Information Systems Conf. (MilCIS)*, 2015, pp. 1–6, doi: 10.1109/MilCIS.2015.7348942.
-4. G. Engelen, V. Rimmer and W. Joosen, "Troubleshooting an intrusion detection dataset: the CICIDS2017 case study," in *Proc. IEEE Security and Privacy Workshops (SPW)*, 2021, pp. 7–12, doi: 10.1109/SPW53761.2021.00009.
 
 ## License
 
